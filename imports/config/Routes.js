@@ -1,10 +1,12 @@
 import React from "react";
 import { Router, Route, browserHistory } from "react-router";
 import Hello from "../ui/components/Hello";
+import PrivacyPolicy from "../ui/pages/PrivacyPolicy";
 
 const Routes = (
   <Router history={browserHistory}>
     <Route path="/" component={Hello} />
+    <Route path="/privacy-policy" component={PrivacyPolicy} />
   </Router>
 );
 

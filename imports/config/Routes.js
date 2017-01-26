@@ -1,10 +1,10 @@
 import React from "react";
 import { Router, Route, browserHistory } from "react-router";
-import hello from "../ui/components/hello";
+import Hello from "../ui/components/Hello";
 
 const Routes = (
   <Router history={browserHistory}>
-    <Route path="/" component={hello} />
+    <Route path="/" component={Hello} />
   </Router>
 );
 

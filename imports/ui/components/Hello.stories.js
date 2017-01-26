@@ -1,8 +1,8 @@
 import React from "react";
 import {
-  storiesOf
+  storiesOf,
 } from "@kadira/storybook";
-import Hello from "../Hello";
+import Hello from "./Hello";
 
 storiesOf("Hello", module)
   .add("default", () => (<Hello />));

@@ -1,6 +1,6 @@
 exports[`<PrivacyPolicy /> renders correctly 1`] = `
 <div
-  className="privacy-policy">
+  data-css-ukvb0q="">
   <h1>
     Privacy Policy
   </h1>

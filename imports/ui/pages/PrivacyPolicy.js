@@ -1,7 +1,8 @@
 import React from "react";
+import { privacyPolicy } from "../styles";
 
 const PrivacyPolicy = () => (
-  <div className="privacy-policy">
+  <div {...privacyPolicy}>
     <h1>Privacy Policy</h1>
     <p>
       This privacy policy discloses the privacy practices for Eat Drink Healthy.

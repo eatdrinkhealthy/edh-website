@@ -5,4 +5,4 @@ import {
 import PrivacyPolicy from "./PrivacyPolicy";
 
 storiesOf("PrivacyPolicy", module)
-  .add("default", () => (<PrivacyPolicy />));
+  .add("page", () => (<PrivacyPolicy />));

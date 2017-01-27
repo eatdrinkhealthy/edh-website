@@ -5,4 +5,4 @@ import {
 import Support from "./Support";
 
 storiesOf("Support", module)
-  .add("default", () => (<Support />));
+  .add("page", () => (<Support />));

@@ -79,14 +79,15 @@ export const defaultPage = css(
  margin-bottom: 20px;
  }
 
- .web-app-button {
- background-color: darkslategray;
- border: none;
- border-radius: 4px;
- color: white;
- padding: 8px 32px 8px 32px;
- text-align: center;
- text-decoration: none;
- font-size: 12px;
- }
  */
+
+export const linkButton = css({
+  backgroundColor: "darkslategray",
+  border: "none",
+  borderRadius: "4px",
+  color: "white",
+  padding: "8px 32px 8px 32px",
+  textAlign: "center",
+  textDecoration: "none",
+  fontSize: "12px",
+});

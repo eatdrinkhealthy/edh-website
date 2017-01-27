@@ -1,25 +1,29 @@
 import { css } from "glamor";
 
-// TODO
-// const gradientBackground = css({
-// background: "#048ec5",
-// background: "-moz-linear-gradient(-45deg, #048ec5 0%, #2ecc71 100%) fixed",
-// background: "-webkit-linear-gradient(-45deg, #048ec5 0%,#2ecc71 100%) fixed",
-//   background: "linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed",
-  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#048ec5', endColorstr='#2ecc71',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-// });
-
-export const logo = css({
-  "background-image": "url('/images/logo.png')",
-  "background-size": "100%",
-  "background-repeat": "no-repeat",
-  width: "226px",
-  height: "156px",
-  display: "block",
-  margin: "90px auto 0",
+// TODO - verify precedence / order works properly
+const gradientBackground = css({
+  background: [
+    "#048ec5",
+    "-moz-linear-gradient(-45deg, #048ec5 0%, #2ecc71 100%) fixed",
+    "-webkit-linear-gradient(-45deg, #048ec5 0%,#2ecc71 100%) fixed",
+    "linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed",
+  ],
+  // // TODO - verify taking effect
+  /* IE6-9 fallback on horizontal gradient */
+  filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#048ec5', endColorstr='#2ecc71',GradientType=1 )",
 });
 
 /*
+ export const logo = css({
+ "background-image": "url('/images/logo.png')",
+ "background-size": "100%",
+ "background-repeat": "no-repeat",
+ width: "226px",
+ height: "156px",
+ display: "block",
+ margin: "90px auto 0",
+ });
+
  .pitch {
  padding-top: 30px;
  font-size: 15px;
@@ -55,11 +59,11 @@ export const logo = css({
  }
  */
 
-export const privacyPolicy = css({
-  // ...gradientBackground,
-  color: "white",
-  padding: "30px",
-});
+export const privacyPolicy = css(
+  gradientBackground,
+  { color: "white" },
+  { padding: "30px" },
+);
 
 /*
  .app-links-header {

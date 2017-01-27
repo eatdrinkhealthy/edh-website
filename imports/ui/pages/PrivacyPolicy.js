@@ -1,8 +1,8 @@
 import React from "react";
-import { privacyPolicy } from "../styles";
+import { defaultPage } from "../styles";
 
 const PrivacyPolicy = () => (
-  <div className={privacyPolicy}>
+  <div className={defaultPage}>
     <h1>Privacy Policy</h1>
     <p>
       This privacy policy discloses the privacy practices for Eat Drink Healthy.

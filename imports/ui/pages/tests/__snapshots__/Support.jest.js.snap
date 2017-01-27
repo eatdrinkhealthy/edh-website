@@ -1,5 +1,15 @@
 exports[`<Support /> renders correctly 1`] = `
-<div>
-  Support
+<div
+  className={
+    Object {
+      "data-css-23k7dl": "",
+    }
+  }>
+  <h1>
+    Support
+  </h1>
+  <p>
+    Under Construction.
+  </p>
 </div>
 `;

@@ -59,7 +59,7 @@ const gradientBackground = css({
  }
  */
 
-export const privacyPolicy = css(
+export const defaultPage = css(
   gradientBackground,
   { color: "white" },
   { padding: "30px" },

@@ -5,12 +5,13 @@ import { linkButton } from "../styles";
 
 const LinkButton = props => (
   <div>
-    <a href="#" className={linkButton}>{props.text}</a>
+    <a href={props.url} className={linkButton}>{props.text}</a>
   </div>
 );
 
 LinkButton.propTypes = {
   text: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 };
 
 export default LinkButton;

@@ -5,4 +5,4 @@ import {
 import LinkButton from "../LinkButton";
 
 storiesOf("Buttons", module)
-  .add("LinkButton", () => (<LinkButton text="Link Button!" />));
+  .add("LinkButton", () => (<LinkButton text="Link Button!" url="http://www.bbc.com" />));

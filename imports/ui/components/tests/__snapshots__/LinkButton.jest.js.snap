@@ -6,7 +6,7 @@ exports[`<LinkButton /> renders correctly 1`] = `
         "data-css-15br13v": "",
       }
     }
-    href="#">
+    href="some link">
     some button text
   </a>
 </div>

@@ -5,6 +5,11 @@ exports[`<SplashPage /> renders correctly 1`] = `
       "data-css-23k7dl": "",
     }
   }>
-  SplashPage
+  <div
+    className={
+      Object {
+        "data-css-nkpr7m": "",
+      }
+    } />
 </div>
 `;

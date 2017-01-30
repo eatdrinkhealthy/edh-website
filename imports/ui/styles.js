@@ -13,17 +13,17 @@ const gradientBackground = css({
   filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#048ec5', endColorstr='#2ecc71',GradientType=1 )",
 });
 
-/*
- export const logo = css({
- "background-image": "url('/images/logo.png')",
- "background-size": "100%",
- "background-repeat": "no-repeat",
- width: "226px",
- height: "156px",
- display: "block",
- margin: "90px auto 0",
- });
+export const companyName = css({
+  backgroundImage: "url('/images/logo.png')",
+  backgroundSize: "100%",
+  backgroundRepeat: "no-repeat",
+  width: "226px",
+  height: "156px",
+  display: "block",
+  margin: "90px auto 0",
+});
 
+/*
  .pitch {
  padding-top: 30px;
  font-size: 15px;

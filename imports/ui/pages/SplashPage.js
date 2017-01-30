@@ -1,7 +1,8 @@
 import React from "react";
+import { defaultPage } from "../styles";
 
 const SplashPage = () => (
-  <div>SplashPage</div>
+  <div className={defaultPage}>SplashPage</div>
 );
 
 export default SplashPage;

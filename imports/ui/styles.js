@@ -13,7 +13,7 @@ const gradientBackground = css({
   filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#048ec5', endColorstr='#2ecc71',GradientType=1 )",
 });
 
-export const companyName = css({
+const companyNameRules = {
   backgroundImage: "url('/images/logo.png')",
   backgroundSize: "100%",
   backgroundRepeat: "no-repeat",
@@ -21,7 +21,32 @@ export const companyName = css({
   height: "156px",
   display: "block",
   margin: "90px auto 0",
-});
+};
+export const companyNameStyle = {
+  rules: companyNameRules,
+  css: css(companyNameRules),
+};
+
+export const defaultPage = css(
+  gradientBackground,
+  { color: "white" },
+  { padding: "30px" },
+);
+
+const linkButtonRules = {
+  backgroundColor: "darkslategray",
+  border: "none",
+  borderRadius: "4px",
+  color: "white",
+  padding: "8px 32px 8px 32px",
+  textAlign: "center",
+  textDecoration: "none",
+  fontSize: "12px",
+};
+export const linkButtonStyle = {
+  rules: linkButtonRules,
+  css: css(linkButtonRules),
+};
 
 /*
  .pitch {
@@ -59,12 +84,6 @@ export const companyName = css({
  }
  */
 
-export const defaultPage = css(
-  gradientBackground,
-  { color: "white" },
-  { padding: "30px" },
-);
-
 /*
  .app-links-header {
  margin-top: 90px;
@@ -80,18 +99,3 @@ export const defaultPage = css(
  }
 
  */
-
-const linkButtonRules = {
-  backgroundColor: "darkslategray",
-  border: "none",
-  borderRadius: "4px",
-  color: "white",
-  padding: "8px 32px 8px 32px",
-  textAlign: "center",
-  textDecoration: "none",
-  fontSize: "12px",
-};
-export const linkButtonStyle = {
-  rules: linkButtonRules,
-  css: css(linkButtonRules),
-};

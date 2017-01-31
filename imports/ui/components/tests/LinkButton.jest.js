@@ -15,7 +15,7 @@ describe("<LinkButton />", function () {
   it("css matches snapshot", function () {
     // TODO - consider / investigate alternate manner for capturing css values
     //     window.getComputedStyle?  use a different renderer? dig through glamor test code?
-    const styleJSON = JSON.stringify(linkButtonStyle.rules, null, " ");
+    const styleJSON = JSON.stringify(linkButtonStyle.rules, null, 2);
     expect(styleJSON).toMatchSnapshot();
   });
 });

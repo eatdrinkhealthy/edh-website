@@ -1,8 +1,8 @@
 import React from "react";
-import { companyName } from "../styles";
+import { companyNameStyle } from "../styles";
 
 const CompanyName = () => (
-  <div className={companyName} />
+  <div className={companyNameStyle.css} />
 );
 
 export default CompanyName;

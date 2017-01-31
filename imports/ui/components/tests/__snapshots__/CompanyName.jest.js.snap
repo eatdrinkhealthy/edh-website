@@ -1,0 +1,10 @@
+exports[`<CompanyName /> css matches snapshot 1`] = `undefined`;
+
+exports[`<CompanyName /> render matches snapshot 1`] = `
+<div
+  className={
+    Object {
+      "data-css-nkpr7m": "",
+    }
+  } />
+`;

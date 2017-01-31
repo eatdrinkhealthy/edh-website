@@ -6,7 +6,7 @@ module.exports = {
       {
         test: /.less$/,
         loaders: ["style", "css", "less"],
-        include: path.resolve(__dirname, '../')
+        include: path.resolve(__dirname, "../")
       }
     ]
   }

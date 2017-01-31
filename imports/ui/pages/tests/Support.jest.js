@@ -3,19 +3,15 @@
 
 import React from "react";
 import renderer from "react-test-renderer";
-import {
-  shallow,
-} from "enzyme";
 import Support from "../Support";
 
 describe("<Support />", function () {
-  it("renders correctly", function () {
+  it("render matches snapshot", function () {
     const tree = renderer.create(<Support />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders Support Page as a div", function () {
-    const wrapper = shallow(<Support />);
-    expect(wrapper.type()).toEqual("div");
+  it("css matches snapshot", function () {
+    expect(JSON.stringify(Support.style, null, 2)).toMatchSnapshot();
   });
 });

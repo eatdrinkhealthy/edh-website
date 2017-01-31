@@ -3,20 +3,15 @@
 
 import React from "react";
 import renderer from "react-test-renderer";
-import {
-    shallow,
-} from "enzyme";
-
 import PrivacyPolicy from "../PrivacyPolicy";
 
 describe("<PrivacyPolicy />", function () {
-  it("renders correctly", function () {
+  it("render matches snapshot", function () {
     const tree = renderer.create(<PrivacyPolicy />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders Privacy Policy header and 5 sections", function () {
-    const wrapper = shallow(<PrivacyPolicy />);
-    expect(wrapper.type()).toEqual("div");
+  it("css matches snapshot", function () {
+    expect(JSON.stringify(PrivacyPolicy.style, null, 2)).toMatchSnapshot();
   });
 });

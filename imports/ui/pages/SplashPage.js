@@ -8,4 +8,6 @@ const SplashPage = () => (
   </div>
 );
 
+SplashPage.style = defaultPageStyle;
+
 export default SplashPage;

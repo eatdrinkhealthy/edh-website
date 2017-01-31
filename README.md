@@ -11,3 +11,7 @@ a simple splash page with links to the web and mobile app, for now.  (this site 
 
 ## Notes
 * ...
+
+## Testing
+* Currently, using a convention where I am storing the javascript version (and glamor css) in the component object, as a convenience for css snapshot testing
+    - may punt on this convention if ill side effects discovered

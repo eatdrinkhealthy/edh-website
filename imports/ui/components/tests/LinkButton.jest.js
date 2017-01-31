@@ -4,7 +4,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import LinkButton from "../LinkButton";
-import { linkButtonStyle } from "../../styles";
 
 describe("<LinkButton />", function () {
   it("render matches snapshot", function () {
@@ -15,7 +14,6 @@ describe("<LinkButton />", function () {
   it("css matches snapshot", function () {
     // TODO - consider / investigate alternate manner for capturing css values
     //     window.getComputedStyle?  use a different renderer? dig through glamor test code?
-    const styleJSON = JSON.stringify(linkButtonStyle.rules, null, 2);
-    expect(styleJSON).toMatchSnapshot();
+    expect(JSON.stringify(LinkButton.style, null, 2)).toMatchSnapshot();
   });
 });

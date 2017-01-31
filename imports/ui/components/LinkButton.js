@@ -9,6 +9,8 @@ const LinkButton = props => (
   </div>
 );
 
+LinkButton.style = linkButtonStyle;
+
 LinkButton.propTypes = {
   text: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,

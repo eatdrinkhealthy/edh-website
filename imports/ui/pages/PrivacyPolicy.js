@@ -96,4 +96,6 @@ const PrivacyPolicy = () => (
   </div>
 );
 
+PrivacyPolicy.style = defaultPageStyle;
+
 export default PrivacyPolicy;

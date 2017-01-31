@@ -13,6 +13,16 @@ const gradientBackgroundRules = {
   filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#048ec5', endColorstr='#2ecc71',GradientType=1 )",
 };
 
+const defaultPageRules = {
+  ...gradientBackgroundRules,
+  color: "white",
+  padding: "30px",
+};
+export const defaultPageStyle = {
+  rules: defaultPageRules,
+  css: css(defaultPageRules),
+};
+
 const companyNameRules = {
   backgroundImage: "url('/images/logo.png')",
   backgroundSize: "100%",
@@ -25,16 +35,6 @@ const companyNameRules = {
 export const companyNameStyle = {
   rules: companyNameRules,
   css: css(companyNameRules),
-};
-
-const defaultPageRules = {
-  ...gradientBackgroundRules,
-  color: "white",
-  padding: "30px",
-};
-export const defaultPageStyle = {
-  rules: defaultPageRules,
-  css: css(defaultPageRules),
 };
 
 const linkButtonRules = {

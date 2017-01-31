@@ -1,4 +1,19 @@
-exports[`<CompanyName /> css matches snapshot 1`] = `undefined`;
+exports[`<CompanyName /> css matches snapshot 1`] = `
+"{
+  \"rules\": {
+    \"backgroundImage\": \"url(\'/images/logo.png\')\",
+    \"backgroundSize\": \"100%\",
+    \"backgroundRepeat\": \"no-repeat\",
+    \"width\": \"226px\",
+    \"height\": \"156px\",
+    \"display\": \"block\",
+    \"margin\": \"90px auto 0\"
+  },
+  \"css\": {
+    \"data-css-nkpr7m\": \"\"
+  }
+}"
+`;
 
 exports[`<CompanyName /> render matches snapshot 1`] = `
 <div

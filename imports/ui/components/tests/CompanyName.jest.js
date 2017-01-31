@@ -4,7 +4,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import CompanyName from "../CompanyName";
-import { CompanyNameStyle } from "../../styles";
 
 describe("<CompanyName />", function () {
   it("render matches snapshot", function () {
@@ -13,6 +12,6 @@ describe("<CompanyName />", function () {
   });
 
   it("css matches snapshot", function () {
-    expect(JSON.stringify(CompanyNameStyle, null, 2)).toMatchSnapshot();
+    expect(JSON.stringify(CompanyName.style, null, 2)).toMatchSnapshot();
   });
 });

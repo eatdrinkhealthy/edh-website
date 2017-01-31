@@ -81,7 +81,7 @@ export const defaultPage = css(
 
  */
 
-export const linkButton = css({
+const linkButtonRules = {
   backgroundColor: "darkslategray",
   border: "none",
   borderRadius: "4px",
@@ -90,4 +90,8 @@ export const linkButton = css({
   textAlign: "center",
   textDecoration: "none",
   fontSize: "12px",
-});
+};
+export const linkButtonStyle = {
+  rules: linkButtonRules,
+  css: css(linkButtonRules),
+};

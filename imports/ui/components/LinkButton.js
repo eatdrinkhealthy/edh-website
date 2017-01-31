@@ -1,11 +1,11 @@
 import React, {
   PropTypes,
 } from "react";
-import { linkButton } from "../styles";
+import { linkButtonStyle } from "../styles";
 
 const LinkButton = props => (
   <div>
-    <a href={props.url} className={linkButton}>{props.text}</a>
+    <a href={props.url} className={linkButtonStyle.css}>{props.text}</a>
   </div>
 );
 

@@ -1,7 +1,7 @@
 import { css } from "glamor";
 
 // TODO - verify precedence / order works properly
-const gradientBackground = css({
+const gradientBackgroundRules = {
   background: [
     "#048ec5",
     "-moz-linear-gradient(-45deg, #048ec5 0%, #2ecc71 100%) fixed",
@@ -11,7 +11,7 @@ const gradientBackground = css({
   // // TODO - verify taking effect
   /* IE6-9 fallback on horizontal gradient */
   filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#048ec5', endColorstr='#2ecc71',GradientType=1 )",
-});
+};
 
 const companyNameRules = {
   backgroundImage: "url('/images/logo.png')",
@@ -27,11 +27,15 @@ export const companyNameStyle = {
   css: css(companyNameRules),
 };
 
-export const defaultPage = css(
-  gradientBackground,
-  { color: "white" },
-  { padding: "30px" },
-);
+const defaultPageRules = {
+  ...gradientBackgroundRules,
+  color: "white",
+  padding: "30px",
+};
+export const defaultPageStyle = {
+  rules: defaultPageRules,
+  css: css(defaultPageRules),
+};
 
 const linkButtonRules = {
   backgroundColor: "darkslategray",

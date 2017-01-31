@@ -1,8 +1,8 @@
 import React from "react";
-import { defaultPage } from "../styles";
+import { defaultPageStyle } from "../styles";
 
 const Support = () => (
-  <div className={defaultPage}>
+  <div className={defaultPageStyle.css}>
     <h1>Support</h1>
     <p>Under Construction.</p>
   </div>

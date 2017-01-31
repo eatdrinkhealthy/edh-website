@@ -1,9 +1,9 @@
 import React from "react";
-import { defaultPage } from "../styles";
+import { defaultPageStyle } from "../styles";
 import CompanyName from "../components/CompanyName";
 
 const SplashPage = () => (
-  <div className={defaultPage}>
+  <div className={defaultPageStyle.css}>
     <CompanyName />
   </div>
 );

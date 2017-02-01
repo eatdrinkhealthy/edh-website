@@ -85,15 +85,17 @@ export const comingSoonStyle = {
   className: `${css(comingSoonRules)}`,
 };
 
-/*
- .ios-icon {
- background-image: url("/images/ios-icon.png");
- background-size: 100%;
- width: 90px;
- height: 90px;
- margin: 30px auto;
- }
- */
+const logoRules = {
+  backgroundImage: "url('/images/ios-icon.png')",
+  backgroundSize: "100%",
+  width: "90px",
+  height: "90px",
+  margin: "30px auto",
+};
+export const logoStyle = {
+  rules: logoRules,
+  className: `${css(logoRules)}`,
+};
 
 /*
  .app-links-header {

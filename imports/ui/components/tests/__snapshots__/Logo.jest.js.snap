@@ -1,0 +1,17 @@
+exports[`<Logo /> css matches snapshot 1`] = `
+"{
+  \"rules\": {
+    \"backgroundImage\": \"url(\'/images/ios-icon.png\')\",
+    \"backgroundSize\": \"100%\",
+    \"width\": \"90px\",
+    \"height\": \"90px\",
+    \"margin\": \"30px auto\"
+  },
+  \"className\": \"css-o94tcm\"
+}"
+`;
+
+exports[`<Logo /> render matches snapshot 1`] = `
+<div
+  className="css-o94tcm" />
+`;

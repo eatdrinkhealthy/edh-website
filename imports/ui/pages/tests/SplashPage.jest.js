@@ -21,5 +21,6 @@ describe("<SplashPage />", function () {
     const wrapper = shallow(<SplashPage />);
     expect(wrapper.find("CompanyName").length).toEqual(1);
     expect(wrapper.find("Pitch").length).toEqual(1);
+    expect(wrapper.find("ComingSoon").length).toEqual(1);
   });
 });

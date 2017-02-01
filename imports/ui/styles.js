@@ -67,21 +67,25 @@ export const pitchStyle = {
   css: css(pitchRules),
 };
 
-/*
- .coming-soon {
- font-family: "Montserrat";
- padding-top: 30px;
- font-size: 20px;
- font-weight: bold;
- text-align: center;
- color: white;
- padding-bottom: 30px;
- border-bottom: 1px solid rgba(255,255,255,0.6);
- display: block;
- width: 226px;
- margin: 0 auto;
- }
+const comingSoonRules = {
+  fontFamily: "Montserrat",
+  paddingTop: "30px",
+  fontSize: "20px",
+  fontWeight: "bold",
+  textAlign: "center",
+  color: "white",
+  paddingBottom: "30px",
+  borderBottom: "1px solid rgba(255,255,255,0.6)",
+  display: "block",
+  width: "226px",
+  margin: "0 auto",
+};
+export const comingSoonStyle = {
+  rules: comingSoonRules,
+  className: `${css(comingSoonRules)}`,
+};
 
+/*
  .ios-icon {
  background-image: url("/images/ios-icon.png");
  background-size: 100%;

@@ -4,10 +4,10 @@
   "scripts": {
     "start": "meteor run",
     "lint": "eslint . --ext .js,.jsx --ignore-pattern 'packages/**'",
-    "pretest": "yarn run lint",
-    "test": "yarn run unit-test",
+    "pretest": "npm run lint",
+    "test": "npm run unit-test",
     "unit-test": "jest -c .jest-config.json",
-    "unit-test-w": "yarn run unit-test -- --watchAll",
+    "unit-test-w": "npm run unit-test -- --watchAll",
     "storybook": "start-storybook -s ./public -p 9001 -c .storybook"
   },
   "dependencies": {

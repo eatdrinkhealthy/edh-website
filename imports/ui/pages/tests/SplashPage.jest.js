@@ -13,12 +13,12 @@ describe("<SplashPage />", function () {
   });
 
   it("css matches snapshot", function () {
+    expect(SplashPage.style).toBeDefined();
     expect(JSON.stringify(SplashPage.style, null, 2)).toMatchSnapshot();
   });
 
   it("contains sections company name, pitch, coming soon, logo, preview ", function () {
     const wrapper = shallow(<SplashPage />);
-
     expect(wrapper.find("CompanyName").length).toEqual(1);
   });
 });

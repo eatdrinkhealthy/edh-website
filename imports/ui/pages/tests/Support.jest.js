@@ -12,6 +12,7 @@ describe("<Support />", function () {
   });
 
   it("css matches snapshot", function () {
+    expect(Support.style).toBeDefined();
     expect(JSON.stringify(Support.style, null, 2)).toMatchSnapshot();
   });
 });

@@ -23,3 +23,10 @@ a simple splash page with links to the web and mobile app, for now.  (this site 
 ### Styling
 * Currently, using a convention where DOM style properties and glamor css are stored in a javascript object, as a convenience for css snapshot testing
     - may punt on this convention if ill side effects discovered or code becomes too verbose
+    - __TODO:__ consider / investigate alternate manner for capturing css values
+        + window.getComputedStyle?  use a different renderer? dig through glamor test code?
+
+### Testing
+* when testing with a snapshot, __be sure to THOROUGHLY examine the first created snapshot file__
+    - it is possible that the snapshot may contain json you are not expecting, even an error, which can still match when subsequently comparing
+    - consider adding an additional test when snapshot testing, to confirm you are getting the type of snapshot you are expecting, and not something like 'undefined'

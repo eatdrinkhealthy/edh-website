@@ -12,6 +12,7 @@ describe("<CompanyName />", function () {
   });
 
   it("css matches snapshot", function () {
+    expect(CompanyName.style).toBeDefined();
     expect(JSON.stringify(CompanyName.style, null, 2)).toMatchSnapshot();
   });
 });

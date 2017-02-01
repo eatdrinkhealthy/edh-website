@@ -52,19 +52,22 @@ export const linkButtonStyle = {
   css: css(linkButtonRules),
 };
 
+const pitchRules = {
+  paddingTop: "30px",
+  fontSize: "15px",
+  color: "white",
+  display: "block",
+  width: "226px",
+  margin: "0 auto",
+  paddingBottom: "30px",
+  borderBottom: "1px solid rgba(255,255,255,0.6)",
+};
+export const pitchStyle = {
+  rules: pitchRules,
+  css: css(pitchRules),
+};
+
 /*
- .pitch {
- padding-top: 30px;
- font-size: 15px;
- color: white;
-
- display: block;
- width: 226px;
- margin: 0 auto;
- padding-bottom: 30px;
- border-bottom: 1px solid rgba(255,255,255,0.6);
- }
-
  .coming-soon {
  font-family: "Montserrat";
  padding-top: 30px;

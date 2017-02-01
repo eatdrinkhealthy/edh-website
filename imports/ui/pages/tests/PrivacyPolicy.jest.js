@@ -12,6 +12,7 @@ describe("<PrivacyPolicy />", function () {
   });
 
   it("css matches snapshot", function () {
+    expect(PrivacyPolicy.style).toBeDefined();
     expect(JSON.stringify(PrivacyPolicy.style, null, 2)).toMatchSnapshot();
   });
 });

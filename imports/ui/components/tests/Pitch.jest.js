@@ -3,16 +3,16 @@
 
 import React from "react";
 import renderer from "react-test-renderer";
-import LinkButton from "../LinkButton";
+import Pitch from "../Pitch";
 
-describe("<LinkButton />", function () {
+describe("<Pitch />", function () {
   it("render matches snapshot", function () {
-    const tree = renderer.create(<LinkButton text="some button text" url="some link" />).toJSON();
+    const tree = renderer.create(<Pitch />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   it("css matches snapshot", function () {
-    expect(LinkButton.style).toBeDefined();
-    expect(JSON.stringify(LinkButton.style, null, 2)).toMatchSnapshot();
+    expect(Pitch.style).toBeDefined();
+    expect(JSON.stringify(Pitch.style, null, 2)).toMatchSnapshot();
   });
 });

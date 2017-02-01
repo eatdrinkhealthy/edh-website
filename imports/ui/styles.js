@@ -20,7 +20,7 @@ const defaultPageRules = {
 };
 export const defaultPageStyle = {
   rules: defaultPageRules,
-  css: css(defaultPageRules),
+  className: `${css(defaultPageRules)}`,
 };
 
 const companyNameRules = {
@@ -34,7 +34,7 @@ const companyNameRules = {
 };
 export const companyNameStyle = {
   rules: companyNameRules,
-  css: css(companyNameRules),
+  className: `${css(companyNameRules)}`,
 };
 
 const linkButtonRules = {
@@ -49,7 +49,7 @@ const linkButtonRules = {
 };
 export const linkButtonStyle = {
   rules: linkButtonRules,
-  css: css(linkButtonRules),
+  className: `${css(linkButtonRules)}`,
 };
 
 const pitchRules = {
@@ -64,7 +64,7 @@ const pitchRules = {
 };
 export const pitchStyle = {
   rules: pitchRules,
-  css: css(pitchRules),
+  className: `${css(pitchRules)}`,
 };
 
 const comingSoonRules = {

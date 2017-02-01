@@ -3,6 +3,7 @@
 
 import React from "react";
 import renderer from "react-test-renderer";
+import { shallow } from "enzyme";
 import PrivacyPolicy from "../PrivacyPolicy";
 
 describe("<PrivacyPolicy />", function () {
@@ -12,7 +13,7 @@ describe("<PrivacyPolicy />", function () {
   });
 
   it("css matches snapshot", function () {
-    expect(PrivacyPolicy.style).toBeDefined();
+    expect(shallow(<PrivacyPolicy />).hasClass(PrivacyPolicy.style.className)).toBe(true);
     expect(JSON.stringify(PrivacyPolicy.style, null, 2)).toMatchSnapshot();
   });
 });

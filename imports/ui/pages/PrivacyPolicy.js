@@ -2,7 +2,7 @@ import React from "react";
 import { defaultPageStyle } from "../styles";
 
 const PrivacyPolicy = () => (
-  <div className={defaultPageStyle.css}>
+  <div className={defaultPageStyle.className}>
     <h1>Privacy Policy</h1>
     <p>
       This privacy policy discloses the privacy practices for Eat Drink Healthy.

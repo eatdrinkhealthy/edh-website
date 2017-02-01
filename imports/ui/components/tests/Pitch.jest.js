@@ -3,6 +3,7 @@
 
 import React from "react";
 import renderer from "react-test-renderer";
+import { shallow } from "enzyme";
 import Pitch from "../Pitch";
 
 describe("<Pitch />", function () {
@@ -12,7 +13,7 @@ describe("<Pitch />", function () {
   });
 
   it("css matches snapshot", function () {
-    expect(Pitch.style).toBeDefined();
+    expect(shallow(<Pitch />).hasClass(Pitch.style.className)).toBe(true);
     expect(JSON.stringify(Pitch.style, null, 2)).toMatchSnapshot();
   });
 });

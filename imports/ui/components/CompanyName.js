@@ -2,7 +2,7 @@ import React from "react";
 import { companyNameStyle } from "../styles";
 
 const CompanyName = () => (
-  <div className={companyNameStyle.css} />
+  <div className={companyNameStyle.className} />
 );
 
 CompanyName.style = companyNameStyle;

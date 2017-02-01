@@ -3,6 +3,7 @@
 
 import React from "react";
 import renderer from "react-test-renderer";
+import { shallow } from "enzyme";
 import CompanyName from "../CompanyName";
 
 describe("<CompanyName />", function () {
@@ -12,7 +13,7 @@ describe("<CompanyName />", function () {
   });
 
   it("css matches snapshot", function () {
-    expect(CompanyName.style).toBeDefined();
+    expect(shallow(<CompanyName />).hasClass(CompanyName.style.className)).toBe(true);
     expect(JSON.stringify(CompanyName.style, null, 2)).toMatchSnapshot();
   });
 });

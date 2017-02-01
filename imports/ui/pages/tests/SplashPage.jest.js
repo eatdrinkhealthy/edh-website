@@ -13,7 +13,7 @@ describe("<SplashPage />", function () {
   });
 
   it("css matches snapshot", function () {
-    expect(SplashPage.style).toBeDefined();
+    expect(shallow(<SplashPage />).hasClass(SplashPage.style.className)).toBe(true);
     expect(JSON.stringify(SplashPage.style, null, 2)).toMatchSnapshot();
   });
 

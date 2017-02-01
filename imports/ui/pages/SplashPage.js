@@ -4,7 +4,7 @@ import CompanyName from "../components/CompanyName";
 import Pitch from "../components/Pitch";
 
 const SplashPage = () => (
-  <div className={defaultPageStyle.css}>
+  <div className={defaultPageStyle.className}>
     <CompanyName />
     <Pitch />
   </div>

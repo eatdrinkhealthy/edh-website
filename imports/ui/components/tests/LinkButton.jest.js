@@ -3,6 +3,7 @@
 
 import React from "react";
 import renderer from "react-test-renderer";
+import { shallow } from "enzyme";
 import LinkButton from "../LinkButton";
 
 describe("<LinkButton />", function () {
@@ -12,7 +13,7 @@ describe("<LinkButton />", function () {
   });
 
   it("css matches snapshot", function () {
-    expect(LinkButton.style).toBeDefined();
+    expect(shallow(<LinkButton text="" url="" />).hasClass(LinkButton.style.className)).toBe(true);
     expect(JSON.stringify(LinkButton.style, null, 2)).toMatchSnapshot();
   });
 });

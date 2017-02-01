@@ -10,19 +10,13 @@ exports[`<Pitch /> css matches snapshot 1`] = `
     \"paddingBottom\": \"30px\",
     \"borderBottom\": \"1px solid rgba(255,255,255,0.6)\"
   },
-  \"css\": {
-    \"data-css-1dl4n80\": \"\"
-  }
+  \"className\": \"css-1dl4n80\"
 }"
 `;
 
 exports[`<Pitch /> render matches snapshot 1`] = `
 <div
-  className={
-    Object {
-      "data-css-1dl4n80": "",
-    }
-  }>
+  className="css-1dl4n80">
   A platform to find, share, and discuss healthy places to shop and eat.
 </div>
 `;

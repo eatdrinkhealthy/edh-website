@@ -10,22 +10,14 @@ exports[`<LinkButton /> css matches snapshot 1`] = `
     \"textDecoration\": \"none\",
     \"fontSize\": \"12px\"
   },
-  \"css\": {
-    \"data-css-15br13v\": \"\"
-  }
+  \"className\": \"css-15br13v\"
 }"
 `;
 
 exports[`<LinkButton /> render matches snapshot 1`] = `
-<div>
-  <a
-    className={
-      Object {
-        "data-css-15br13v": "",
-      }
-    }
-    href="some link">
-    some button text
-  </a>
-</div>
+<a
+  className="css-15br13v"
+  href="some link">
+  some button text
+</a>
 `;

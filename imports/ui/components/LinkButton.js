@@ -4,9 +4,7 @@ import React, {
 import { linkButtonStyle } from "../styles";
 
 const LinkButton = props => (
-  <div>
-    <a href={props.url} className={linkButtonStyle.css}>{props.text}</a>
-  </div>
+  <a href={props.url} className={linkButtonStyle.className}>{props.text}</a>
 );
 
 LinkButton.style = linkButtonStyle;

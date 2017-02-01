@@ -13,31 +13,17 @@ exports[`<SplashPage /> css matches snapshot 1`] = `
     \"color\": \"white\",
     \"padding\": \"30px\"
   },
-  \"css\": {
-    \"data-css-wlbfil\": \"\"
-  }
+  \"className\": \"css-wlbfil\"
 }"
 `;
 
 exports[`<SplashPage /> render matches snapshot 1`] = `
 <div
-  className={
-    Object {
-      "data-css-wlbfil": "",
-    }
-  }>
+  className="css-wlbfil">
   <div
-    className={
-      Object {
-        "data-css-nkpr7m": "",
-      }
-    } />
+    className="css-nkpr7m" />
   <div
-    className={
-      Object {
-        "data-css-1dl4n80": "",
-      }
-    }>
+    className="css-1dl4n80">
     A platform to find, share, and discuss healthy places to shop and eat.
   </div>
 </div>

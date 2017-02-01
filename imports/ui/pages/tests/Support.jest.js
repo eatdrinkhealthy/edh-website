@@ -3,6 +3,7 @@
 
 import React from "react";
 import renderer from "react-test-renderer";
+import { shallow } from "enzyme";
 import Support from "../Support";
 
 describe("<Support />", function () {
@@ -12,7 +13,7 @@ describe("<Support />", function () {
   });
 
   it("css matches snapshot", function () {
-    expect(Support.style).toBeDefined();
+    expect(shallow(<Support />).hasClass(Support.style.className)).toBe(true);
     expect(JSON.stringify(Support.style, null, 2)).toMatchSnapshot();
   });
 });

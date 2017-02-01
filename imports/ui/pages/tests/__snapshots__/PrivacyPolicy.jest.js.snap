@@ -13,19 +13,13 @@ exports[`<PrivacyPolicy /> css matches snapshot 1`] = `
     \"color\": \"white\",
     \"padding\": \"30px\"
   },
-  \"css\": {
-    \"data-css-wlbfil\": \"\"
-  }
+  \"className\": \"css-wlbfil\"
 }"
 `;
 
 exports[`<PrivacyPolicy /> render matches snapshot 1`] = `
 <div
-  className={
-    Object {
-      "data-css-wlbfil": "",
-    }
-  }>
+  className="css-wlbfil">
   <h1>
     Privacy Policy
   </h1>

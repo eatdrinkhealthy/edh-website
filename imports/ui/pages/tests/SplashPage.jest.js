@@ -20,5 +20,6 @@ describe("<SplashPage />", function () {
   it("contains sections company name, pitch, coming soon, logo, preview ", function () {
     const wrapper = shallow(<SplashPage />);
     expect(wrapper.find("CompanyName").length).toEqual(1);
+    expect(wrapper.find("Pitch").length).toEqual(1);
   });
 });

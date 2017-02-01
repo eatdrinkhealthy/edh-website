@@ -30,5 +30,7 @@ exports[`<SplashPage /> render matches snapshot 1`] = `
     className="css-cdesk3">
     Coming Soon
   </div>
+  <div
+    className="css-o94tcm" />
 </div>
 `;

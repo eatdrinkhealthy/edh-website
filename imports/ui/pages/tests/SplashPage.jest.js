@@ -22,5 +22,6 @@ describe("<SplashPage />", function () {
     expect(wrapper.find("CompanyName").length).toEqual(1);
     expect(wrapper.find("Pitch").length).toEqual(1);
     expect(wrapper.find("ComingSoon").length).toEqual(1);
+    expect(wrapper.find("Logo").length).toEqual(1);
   });
 });

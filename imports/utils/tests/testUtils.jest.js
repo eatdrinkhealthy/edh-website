@@ -1,7 +1,9 @@
 /* eslint-env jest */
 /* eslint-disable func-names, prefer-arrow-callback, no-unused-expressions */
 /* eslint-disable import/no-extraneous-dependencies */
-import { getHTMLClasses } from "../testUtils";
+
+import React from "react";
+import { getHTMLClasses, getComponentClasses } from "../testUtils";
 
 describe("testUtils", function () {
   describe("getHTMLClasses", function () {
@@ -71,6 +73,34 @@ describe("testUtils", function () {
   });
 
   describe("getComponentClasses", function () {
+    it("puts all unique class names of a component in an array", function () {
+      const SimpleComponent = () => (
+        <div className="c1">
+          <h1 className="c2">Title</h1>
+          <p className="c3 c1">text</p>
+        </div>
+      );
 
+      expect(getComponentClasses(<SimpleComponent />).length).toEqual(3);
+    });
+
+    it("includes class names from nested components", function () {
+      const NestedComponent = () => (
+        <div className="c1">
+          <h1 className="c4">Title</h1>
+          <p className="c5 c1">text</p>
+        </div>
+      );
+
+      const ComplexComponent = () => (
+        <div className="c1">
+          <h1 className="c2">Title</h1>
+          <p className="c3 c2">text</p>
+          <NestedComponent />
+        </div>
+      );
+
+      expect(getComponentClasses(<ComplexComponent />).length).toEqual(5);
+    });
   });
 });

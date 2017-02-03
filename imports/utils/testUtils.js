@@ -28,6 +28,5 @@ export function getComponentClasses(currComponent) {
   // NOTE: using mount here to ensure all child elements are fully rendered
   //       but is seems shallow might work too
   const mountedHTML = mount(currComponent).html();
-  console.log("component html:", mountedHTML);
   return getHTMLClasses(mountedHTML);
 }

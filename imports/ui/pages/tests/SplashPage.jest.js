@@ -19,10 +19,7 @@ describe("<SplashPage />", function () {
   it("matches css snapshot", function () {
     // TODO complete getting classes to snapshot
     const classList = getComponentClasses(<SplashPage />);
-    expect(classList.length).toBe(5);
-
-    expect(shallow(<SplashPage />).hasClass(SplashPage.style.className)).toBe(true);
-    expect(JSON.stringify(SplashPage.style, null, 2)).toMatchSnapshot();
+    expect(JSON.stringify(classList, null, 2)).toMatchSnapshot();
   });
 
   it("contains sections company name, pitch, coming soon, logo, preview ", function () {

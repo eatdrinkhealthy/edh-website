@@ -1,60 +1,23 @@
-exports[`<SplashPage /> css matches snapshot 1`] = `
-"{
-  "rules": {
-    "background": [
-      "#048ec5",
-      "-moz-linear-gradient(-45deg, #048ec5 0%, #2ecc71 100%) fixed",
-      "-webkit-linear-gradient(-45deg, #048ec5 0%,#2ecc71 100%) fixed",
-      "-webkit-linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed",
-      "-moz-linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed",
-      "linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed"
-    ],
-    "filter": "progid:DXImageTransform.Microsoft.gradient( startColorstr='#048ec5', endColorstr='#2ecc71',GradientType=1 )",
-    "color": "white",
-    "padding": "30px"
-  },
-  "className": "css-wlbfil"
-}"
-`;
-
 exports[`<SplashPage /> matches css snapshot 1`] = `
 "{
-  "rules": {
-    "background": [
-      "#048ec5",
-      "-moz-linear-gradient(-45deg, #048ec5 0%, #2ecc71 100%) fixed",
-      "-webkit-linear-gradient(-45deg, #048ec5 0%,#2ecc71 100%) fixed",
-      "-webkit-linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed",
-      "-moz-linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed",
-      "linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed"
+  \"rules\": {
+    \"background\": [
+      \"#048ec5\",
+      \"-moz-linear-gradient(-45deg, #048ec5 0%, #2ecc71 100%) fixed\",
+      \"-webkit-linear-gradient(-45deg, #048ec5 0%,#2ecc71 100%) fixed\",
+      \"-webkit-linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed\",
+      \"-moz-linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed\",
+      \"linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed\"
     ],
-    "filter": "progid:DXImageTransform.Microsoft.gradient( startColorstr='#048ec5', endColorstr='#2ecc71',GradientType=1 )",
-    "color": "white",
-    "padding": "30px"
+    \"filter\": \"progid:DXImageTransform.Microsoft.gradient( startColorstr=\'#048ec5\', endColorstr=\'#2ecc71\',GradientType=1 )\",
+    \"color\": \"white\",
+    \"padding\": \"30px\"
   },
-  "className": "css-wlbfil"
+  \"className\": \"css-wlbfil\"
 }"
 `;
 
 exports[`<SplashPage /> matches render snapshot 1`] = `
-<div
-  className="css-wlbfil">
-  <div
-    className="css-nkpr7m" />
-  <div
-    className="css-1dl4n80 anotherClass">
-    A platform to find, share, and discuss healthy places to shop and eat.
-  </div>
-  <div
-    className="css-cdesk3">
-    Coming Soon
-  </div>
-  <div
-    className="css-o94tcm anotherClass" />
-</div>
-`;
-
-exports[`<SplashPage /> render matches snapshot 1`] = `
 <div
   className="css-wlbfil">
   <div

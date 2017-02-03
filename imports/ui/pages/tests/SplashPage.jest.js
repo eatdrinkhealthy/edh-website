@@ -16,7 +16,7 @@ describe("<SplashPage />", function () {
     expect(tree).toMatchSnapshot();
   });
 
-  it.skip("matches css snapshot", function () {
+  it("matches css snapshot", function () {
     // TODO complete getting classes to snapshot
     const classList = getComponentClasses(<SplashPage />);
     expect(classList.length).toBeGreaterThan(0);

@@ -1,5 +1,6 @@
 /* eslint-env jest */
 /* eslint-disable func-names, prefer-arrow-callback, no-unused-expressions */
+/* eslint-disable import/no-extraneous-dependencies */
 
 import React from "react";
 import renderer from "react-test-renderer";
@@ -7,6 +8,7 @@ import {
   shallow,
 } from "enzyme";
 import ComingSoon from "../ComingSoon";
+import { formattedJSON } from "../../../utils/tests/testUtils";
 
 describe("<ComingSoon />", function () {
   it("render matches snapshot", function () {
@@ -19,6 +21,6 @@ describe("<ComingSoon />", function () {
     expect(shallow(<ComingSoon />).hasClass(ComingSoon.style.className)).toBe(true);
 
     // checking snapshot
-    expect(JSON.stringify(ComingSoon.style, null, 2)).toMatchSnapshot();
+    expect(formattedJSON(ComingSoon.style)).toMatchSnapshot();
   });
 });

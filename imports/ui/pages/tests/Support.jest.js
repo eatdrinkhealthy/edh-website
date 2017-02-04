@@ -5,6 +5,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { shallow } from "enzyme";
 import Support from "../Support";
+import { formattedJSON } from "../../../utils/tests/testUtils";
 
 describe("<Support />", function () {
   it("render matches snapshot", function () {
@@ -14,6 +15,6 @@ describe("<Support />", function () {
 
   it("css matches snapshot", function () {
     expect(shallow(<Support />).hasClass(Support.style.className)).toBe(true);
-    expect(JSON.stringify(Support.style, null, 2)).toMatchSnapshot();
+    expect(formattedJSON(Support.style)).toMatchSnapshot();
   });
 });

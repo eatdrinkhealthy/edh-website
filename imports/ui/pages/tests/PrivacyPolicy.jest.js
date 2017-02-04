@@ -5,6 +5,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { shallow } from "enzyme";
 import PrivacyPolicy from "../PrivacyPolicy";
+import { formattedJSON } from "../../../utils/tests/testUtils";
 
 describe("<PrivacyPolicy />", function () {
   it("render matches snapshot", function () {
@@ -14,6 +15,6 @@ describe("<PrivacyPolicy />", function () {
 
   it("css matches snapshot", function () {
     expect(shallow(<PrivacyPolicy />).hasClass(PrivacyPolicy.style.className)).toBe(true);
-    expect(JSON.stringify(PrivacyPolicy.style, null, 2)).toMatchSnapshot();
+    expect(formattedJSON(PrivacyPolicy.style)).toMatchSnapshot();
   });
 });

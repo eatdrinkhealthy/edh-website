@@ -8,7 +8,7 @@ import {
 } from "enzyme";
 import renderer from "react-test-renderer";
 import SplashPage from "../SplashPage";
-import { getComponentClasses } from "../../../utils/tests/testUtils";
+import { getComponentClasses, formattedJSON } from "../../../utils/tests/testUtils";
 
 describe("<SplashPage />", function () {
   it("matches render snapshot", function () {
@@ -19,7 +19,7 @@ describe("<SplashPage />", function () {
   it("matches css snapshot", function () {
     // TODO complete getting classes to snapshot
     const classList = getComponentClasses(<SplashPage />);
-    expect(JSON.stringify(classList, null, 2)).toMatchSnapshot();
+    expect(formattedJSON(classList)).toMatchSnapshot();
   });
 
   it("contains sections company name, pitch, coming soon, logo, preview ", function () {

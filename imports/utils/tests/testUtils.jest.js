@@ -3,7 +3,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
 import React from "react";
-import { getHTMLClasses, getComponentClasses } from "../testUtils";
+import { getHTMLClasses, getComponentClasses, findStyle, classListToJSON } from "../testUtils";
 
 describe("testUtils", function () {
   describe("getHTMLClasses", function () {
@@ -101,6 +101,60 @@ describe("testUtils", function () {
       );
 
       expect(getComponentClasses(<ComplexComponent />).length).toEqual(5);
+    });
+  });
+
+  describe("Capture CSS Rules", function () {
+    const styles = {
+      logo: {
+        rules: { color: "red", width: "90px" },
+        className: "logoStyleName",
+      },
+      page: {
+        rules: { color: "green", height: "40px" },
+        className: "pageStyleName",
+      },
+      footer: {
+        rules: { width: "90px" },
+        className: "footerStyleName",
+      },
+    };
+
+    describe("findStyle", function () {
+      it("finds the style object by className", function () {
+        const foundStyleObj = findStyle(styles, "logoStyleName");
+        expect(foundStyleObj).toEqual({
+          rules: { color: "red", width: "90px" },
+          className: "logoStyleName",
+        });
+      });
+
+      it("returns undefined if object not found", function () {
+        const foundStyleObj = findStyle(styles, "notFound");
+        expect(foundStyleObj).toBeUndefined();
+      });
+    });
+
+    describe("classListToJSON", function () {
+      it("creates a string of multiple classes and their rules", function () {
+        const classNameList = ["logoStyleName", "pageStyleName"];
+        const rulesList = classListToJSON(styles, classNameList);
+
+        expect(rulesList).toMatch(`rules": {`);
+        expect(rulesList).toMatch(`"color": "red",`);
+        expect(rulesList).toMatch(`"className": "logoStyleName"`);
+        expect(rulesList).toMatch(`"height": "40px"`);
+        expect(rulesList).toMatch(`"className": "pageStyleName"`);
+      });
+
+      it("includes a nonexisting class as 'undefined'", function () {
+        const classNameList = ["logoStyleName", "notFound", "pageStyleName"];
+        const rulesList = classListToJSON(styles, classNameList);
+
+        expect(rulesList).toMatch(`"className": "logoStyleName"`);
+        expect(rulesList).toMatch(`null,`);
+        expect(rulesList).toMatch(`"className": "pageStyleName"`);
+      });
     });
   });
 });

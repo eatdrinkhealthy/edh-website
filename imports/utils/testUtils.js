@@ -24,9 +24,22 @@ export function getHTMLClasses(htmlString) {
   return classList;
 }
 
+// NOTE: using mount here to ensure all child elements are fully rendered
+//       but is seems shallow might work too
 export function getComponentClasses(currComponent) {
-  // NOTE: using mount here to ensure all child elements are fully rendered
-  //       but is seems shallow might work too
   const mountedHTML = mount(currComponent).html();
   return getHTMLClasses(mountedHTML);
+}
+
+// NOTE: this finds the first style object with matching className
+//       which should not be an issue, since glamor classNames are hashed and unique
+export function findStyle(stylesObj, className) {
+  const styleKey = _.findKey(stylesObj, obj => (obj.className === className));
+
+  return stylesObj[styleKey];
+}
+
+export function classListToJSON(stylesObj, classList) {
+  const ruleObjs = classList.map(className => (findStyle(stylesObj, className)));
+  return JSON.stringify(ruleObjs, null, 2);
 }

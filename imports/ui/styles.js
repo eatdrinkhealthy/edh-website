@@ -97,6 +97,17 @@ export const logoStyle = {
   className: `${css(logoRules)}`,
 };
 
+export const styles = {
+  defaultPage: {
+    rules: defaultPageRules,
+    className: `${css(defaultPageRules)}`,
+  },
+  logo: {
+    rules: logoRules,
+    className: `${css(logoRules)}`,
+  },
+};
+
 /*
  .app-links-header {
  margin-top: 90px;

@@ -30,13 +30,13 @@ export function getHTMLClasses(htmlString) {
 }
 
 /**
- * getComponentClasses - returns an array of unique class names used in provided component
+ * componentClassNameList - returns an array of unique class names used in provided component
  * @params component currComponent - a react component
  *
  * NOTE: using mount here to ensure all child elements are fully rendered
  *       but is seems shallow might work too
  */
-export function getComponentClasses(currComponent) {
+export function componentClassNameList(currComponent) {
   const mountedHTML = mount(currComponent).html();
   return getHTMLClasses(mountedHTML);
 }

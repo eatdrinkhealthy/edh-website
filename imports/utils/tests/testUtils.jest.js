@@ -3,7 +3,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
 import React from "react";
-import { getHTMLClasses, getComponentClasses, findStyle, classListToJSON } from "./testUtils";
+import { getHTMLClasses, componentClassNameList, findStyle, classListToJSON } from "./testUtils";
 
 describe("testUtils", function () {
   describe("getHTMLClasses", function () {
@@ -72,7 +72,7 @@ describe("testUtils", function () {
     });
   });
 
-  describe("getComponentClasses", function () {
+  describe("componentClassNameList", function () {
     it("puts all unique class names of a component in an array", function () {
       const SimpleComponent = () => (
         <div className="c1">
@@ -81,7 +81,7 @@ describe("testUtils", function () {
         </div>
       );
 
-      expect(getComponentClasses(<SimpleComponent />).length).toEqual(3);
+      expect(componentClassNameList(<SimpleComponent />).length).toEqual(3);
     });
 
     it("includes class names from nested components", function () {
@@ -100,7 +100,7 @@ describe("testUtils", function () {
         </div>
       );
 
-      expect(getComponentClasses(<ComplexComponent />).length).toEqual(5);
+      expect(componentClassNameList(<ComplexComponent />).length).toEqual(5);
     });
   });
 

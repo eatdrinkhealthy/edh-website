@@ -8,7 +8,7 @@ import {
 } from "enzyme";
 import renderer from "react-test-renderer";
 import SplashPage from "../SplashPage";
-import { getComponentClasses } from "../../../utils/testUtils";
+import { getComponentClasses } from "../../../utils/tests/testUtils";
 
 describe("<SplashPage />", function () {
   it("matches render snapshot", function () {

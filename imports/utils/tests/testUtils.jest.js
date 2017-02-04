@@ -3,7 +3,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
 import React from "react";
-import { getHTMLClasses, getComponentClasses, findStyle, classListToJSON } from "../testUtils";
+import { getHTMLClasses, getComponentClasses, findStyle, classListToJSON } from "./testUtils";
 
 describe("testUtils", function () {
   describe("getHTMLClasses", function () {

@@ -3,22 +3,23 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
 import React from "react";
-import { getHTMLClasses, componentClassNameList, findStyle, classListToJSON } from "./testUtils";
+import * as styles from "../../ui/styles";
+import { htmlClassList, componentClassNameList, getClassNameStyleObj, classListToJSON } from "./testUtils";
 
 describe("testUtils", function () {
-  describe("getHTMLClasses", function () {
+  describe("htmlClassList", function () {
     it("should return an empty array if provided an empty html string", function () {
-      expect(getHTMLClasses("").length).toEqual(0);
+      expect(htmlClassList("").length).toEqual(0);
     });
 
     it("should return an empty array if no classes are found", function () {
       const htmlString = `<div><h1 id="main">some text</h1><h2>Coming Soon</h2><div></div></div>`;
-      expect(getHTMLClasses(htmlString).length).toEqual(0);
+      expect(htmlClassList(htmlString).length).toEqual(0);
     });
 
     it("should find top level element classes", function () {
       const htmlString = `<div class="c1"><div>some text</div><div>Coming Soon</div></div>`;
-      expect(getHTMLClasses(htmlString).length).toEqual(1);
+      expect(htmlClassList(htmlString).length).toEqual(1);
     });
 
     it("should find deep nested classes", function () {
@@ -33,26 +34,26 @@ describe("testUtils", function () {
         `<div></div>` +
         `</div>`;
 
-      expect(getHTMLClasses(htmlString).length).toEqual(2);
+      expect(htmlClassList(htmlString).length).toEqual(2);
     });
 
     it("should find multiple unique classes per single element", function () {
       const htmlString = `<div id="main"><h1 class="c1 c2">some text</h1></div>`;
-      expect(getHTMLClasses(htmlString).length).toEqual(2);
+      expect(htmlClassList(htmlString).length).toEqual(2);
     });
 
     it("should find multiple unique classes per single element, even with extra spaces", function () {
       let htmlString = `<div id="main"><h1 class="c1 c2 ">some text</h1></div>`;
-      expect(getHTMLClasses(htmlString).length).toEqual(2);
+      expect(htmlClassList(htmlString).length).toEqual(2);
 
       htmlString = `<div id="main"><h1 class=" c1 c2">some text</h1></div>`;
-      expect(getHTMLClasses(htmlString).length).toEqual(2);
+      expect(htmlClassList(htmlString).length).toEqual(2);
 
       htmlString = `<div id="main"><h1 class=" c1 c2 ">some text</h1></div>`;
-      expect(getHTMLClasses(htmlString).length).toEqual(2);
+      expect(htmlClassList(htmlString).length).toEqual(2);
 
       htmlString = `<div id="main"><h1 class=" c1  c2 ">some text</h1></div>`;
-      expect(getHTMLClasses(htmlString).length).toEqual(2);
+      expect(htmlClassList(htmlString).length).toEqual(2);
     });
 
     it("should not add duplicate classes", function () {
@@ -63,12 +64,12 @@ describe("testUtils", function () {
         `<div class="c4 c3"></div>` +
         `</div>`;
 
-      expect(getHTMLClasses(htmlString).length).toEqual(4);
+      expect(htmlClassList(htmlString).length).toEqual(4);
     });
 
     it("should not added duplicate classes, even if listed in same element twice", function () {
       const htmlString = `<div><h1 class="c1 c1">some text</h1></div>`;
-      expect(getHTMLClasses(htmlString).length).toEqual(1);
+      expect(htmlClassList(htmlString).length).toEqual(1);
     });
   });
 
@@ -105,55 +106,38 @@ describe("testUtils", function () {
   });
 
   describe("Capture CSS Rules", function () {
-    const styles = {
-      logo: {
-        rules: { color: "red", width: "90px" },
-        className: "logoStyleName",
-      },
-      page: {
-        rules: { color: "green", height: "40px" },
-        className: "pageStyleName",
-      },
-      footer: {
-        rules: { width: "90px" },
-        className: "footerStyleName",
-      },
-    };
-
-    describe("findStyle", function () {
+    describe("getClassNameStyleObj", function () {
       it("finds the style object by className", function () {
-        const foundStyleObj = findStyle(styles, "logoStyleName");
-        expect(foundStyleObj).toEqual({
-          rules: { color: "red", width: "90px" },
-          className: "logoStyleName",
-        });
+        const foundStyleObj = getClassNameStyleObj(styles, styles.logoStyle.className);
+        expect(foundStyleObj).toEqual(styles.logoStyle);
       });
 
-      it("returns undefined if object not found", function () {
-        const foundStyleObj = findStyle(styles, "notFound");
-        expect(foundStyleObj).toBeUndefined();
+      it("returns a 'not found status object' if className not found", function () {
+        const foundStyleObj = getClassNameStyleObj(styles, "badClassName");
+        expect(foundStyleObj).toEqual({
+          className: "badClassName",
+          status: "not found",
+        });
       });
     });
 
     describe("classListToJSON", function () {
       it("creates a string of multiple classes and their rules", function () {
-        const classNameList = ["logoStyleName", "pageStyleName"];
+        const classNameList = [styles.logoStyle.className, styles.defaultPageStyle.className];
         const rulesList = classListToJSON(styles, classNameList);
 
         expect(rulesList).toMatch(`rules": {`);
-        expect(rulesList).toMatch(`"color": "red",`);
-        expect(rulesList).toMatch(`"className": "logoStyleName"`);
-        expect(rulesList).toMatch(`"height": "40px"`);
-        expect(rulesList).toMatch(`"className": "pageStyleName"`);
+        expect(rulesList).toMatch(`"backgroundSize": "100%",`);
+        expect(rulesList).toMatch(`"height": "90px"`);
+        expect(rulesList).toMatch(`"linear-gradient(`);
       });
 
-      it("includes a nonexisting class as 'undefined'", function () {
-        const classNameList = ["logoStyleName", "notFound", "pageStyleName"];
+      it("includes a 'not found' status if className not found", function () {
+        const classNameList = [styles.logoStyle.className, "badClassName"];
         const rulesList = classListToJSON(styles, classNameList);
 
-        expect(rulesList).toMatch(`"className": "logoStyleName"`);
-        expect(rulesList).toMatch(`null,`);
-        expect(rulesList).toMatch(`"className": "pageStyleName"`);
+        expect(rulesList).toMatch(`"className": "badClassName"`);
+        expect(rulesList).toMatch(`"status": "not found"`);
       });
     });
   });

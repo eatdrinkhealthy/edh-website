@@ -1,20 +1,22 @@
 exports[`<PrivacyPolicy /> css matches snapshot 1`] = `
-"{
-  \"rules\": {
-    \"background\": [
-      \"#048ec5\",
-      \"-moz-linear-gradient(-45deg, #048ec5 0%, #2ecc71 100%) fixed\",
-      \"-webkit-linear-gradient(-45deg, #048ec5 0%,#2ecc71 100%) fixed\",
-      \"-webkit-linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed\",
-      \"-moz-linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed\",
-      \"linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed\"
-    ],
-    \"filter\": \"progid:DXImageTransform.Microsoft.gradient( startColorstr=\'#048ec5\', endColorstr=\'#2ecc71\',GradientType=1 )\",
-    \"color\": \"white\",
-    \"padding\": \"30px\"
-  },
-  \"className\": \"css-wlbfil\"
-}"
+"[
+  {
+    \"rules\": {
+      \"background\": [
+        \"#048ec5\",
+        \"-moz-linear-gradient(-45deg, #048ec5 0%, #2ecc71 100%) fixed\",
+        \"-webkit-linear-gradient(-45deg, #048ec5 0%,#2ecc71 100%) fixed\",
+        \"-webkit-linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed\",
+        \"-moz-linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed\",
+        \"linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed\"
+      ],
+      \"filter\": \"progid:DXImageTransform.Microsoft.gradient( startColorstr=\'#048ec5\', endColorstr=\'#2ecc71\',GradientType=1 )\",
+      \"color\": \"white\",
+      \"padding\": \"30px\"
+    },
+    \"className\": \"css-wlbfil\"
+  }
+]"
 `;
 
 exports[`<PrivacyPolicy /> render matches snapshot 1`] = `

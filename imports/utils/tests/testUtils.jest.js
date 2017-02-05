@@ -4,9 +4,24 @@
 
 import React from "react";
 import * as styles from "../../ui/styles";
-import { htmlClassList, componentClassNameList, getClassNameStyleObj, classListToJSON } from "./testUtils";
+import {
+  htmlClassList,
+  componentClassNameList,
+  getClassNameStyleObj,
+  classNamesToStyleObjList,
+  notFoundStatus,
+} from "./testUtils";
 
 describe("testUtils", function () {
+  describe("notFoundStatus", function () {
+    it("creates a new object with a className and status property of 'not found'", function () {
+      expect(notFoundStatus("thisClass")).toEqual({
+        className: "thisClass",
+        status: "not found",
+      });
+    });
+  });
+
   describe("htmlClassList", function () {
     it("should return an empty array if provided an empty html string", function () {
       expect(htmlClassList("").length).toEqual(0);
@@ -105,39 +120,37 @@ describe("testUtils", function () {
     });
   });
 
-  describe("Capture CSS Rules", function () {
+  describe("Capture Styling / CSS Rules", function () {
     describe("getClassNameStyleObj", function () {
       it("finds the style object by className", function () {
-        const foundStyleObj = getClassNameStyleObj(styles, styles.logoStyle.className);
+        const foundStyleObj = getClassNameStyleObj(styles.logoStyle.className, styles);
         expect(foundStyleObj).toEqual(styles.logoStyle);
       });
 
       it("returns a 'not found status object' if className not found", function () {
-        const foundStyleObj = getClassNameStyleObj(styles, "badClassName");
-        expect(foundStyleObj).toEqual({
-          className: "badClassName",
-          status: "not found",
-        });
+        const foundStyleObj = getClassNameStyleObj("badClassName", styles);
+        expect(foundStyleObj).toEqual(notFoundStatus("badClassName"));
       });
     });
 
-    describe("classListToJSON", function () {
-      it("creates a string of multiple classes and their rules", function () {
+    describe("classNamesToStyleObjList", function () {
+      it("creates an array of style objects", function () {
         const classNameList = [styles.logoStyle.className, styles.defaultPageStyle.className];
-        const rulesList = classListToJSON(styles, classNameList);
+        const ruleObjectsList = classNamesToStyleObjList(classNameList, styles);
 
-        expect(rulesList).toMatch(`rules": {`);
-        expect(rulesList).toMatch(`"backgroundSize": "100%",`);
-        expect(rulesList).toMatch(`"height": "90px"`);
-        expect(rulesList).toMatch(`"linear-gradient(`);
+        expect(Array.isArray((ruleObjectsList))).toBe(true);
+        expect(typeof ruleObjectsList[0]).toBe("object");
+
+        expect(ruleObjectsList[0]).toEqual(styles.logoStyle);
+        expect(ruleObjectsList[1]).toEqual(styles.defaultPageStyle);
       });
 
       it("includes a 'not found' status if className not found", function () {
         const classNameList = [styles.logoStyle.className, "badClassName"];
-        const rulesList = classListToJSON(styles, classNameList);
+        const ruleObjectsList = classNamesToStyleObjList(classNameList, styles);
 
-        expect(rulesList).toMatch(`"className": "badClassName"`);
-        expect(rulesList).toMatch(`"status": "not found"`);
+        expect(ruleObjectsList[0]).toEqual(styles.logoStyle);
+        expect(ruleObjectsList[1]).toEqual(notFoundStatus("badClassName"));
       });
     });
   });

@@ -10,6 +10,10 @@ export function formattedJSON(item) {
   return JSON.stringify(item, null, 2);
 }
 
+export function notFoundStatus(className) {
+  return Object.assign({ className }, { status: "not found" });
+}
+
 export function htmlClassList(htmlString) {
   const $ = cheerio.load(htmlString);
   let classList = [];
@@ -29,12 +33,18 @@ export function componentClassNameList(currComponent) {
   return htmlClassList(mountedHTML);
 }
 
-export function getClassNameStyleObj(stylesObj, className) {
+export function getClassNameStyleObj(className, stylesObj) {
   const styleKey = _.findKey(stylesObj, obj => (obj.className === className));
-  return stylesObj[styleKey] || { className, status: "not found" };
+
+  return stylesObj[styleKey] || notFoundStatus(className);
 }
 
-export function classListToJSON(stylesObj, classList) {
-  const styleObjectList = classList.map(className => (getClassNameStyleObj(stylesObj, className)));
-  return formattedJSON(styleObjectList);
+export function classNamesToStyleObjList(classNameList, styles) {
+  const styleObjectList = classNameList.map(className => (getClassNameStyleObj(className, styles)));
+  return styleObjectList;
+}
+
+export function getAllComponentStyle(currComponent, styles) {
+  const classNameList = componentClassNameList(currComponent);
+  return classNamesToStyleObjList(classNameList, styles);
 }

@@ -5,6 +5,4 @@ const Logo = () => (
   <div className={`${logoStyle.className}`} />
 );
 
-Logo.style = logoStyle;
-
 export default Logo;

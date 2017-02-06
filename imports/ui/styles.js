@@ -97,18 +97,23 @@ export const logoStyle = {
   className: `${css(logoRules)}`,
 };
 
-/*
- .app-links-header {
- margin-top: 90px;
- margin-left: 40px;
- font-size: 16px;
- color: white;
- }
+const appLinksHeaderRules = {
+  marginTop: "90px",
+  marginLeft: "40px",
+  fontSize: "16px",
+  color: "white",
+};
+export const appLinksHeaderStyle = {
+  rules: appLinksHeaderRules,
+  className: `${css(appLinksHeaderRules)}`,
+};
 
- .app-links-buttons {
- margin-top: 14px;
- margin-left: 40px;
- margin-bottom: 20px;
- }
-
- */
+const appLinksButtonsRules = {
+  marginTop: "14px",
+  marginLeft: "40px",
+  marginBottom: "20px",
+};
+export const appLinksButtonsStyle = {
+  rules: appLinksButtonsRules,
+  className: `${css(appLinksButtonsRules)}`,
+};

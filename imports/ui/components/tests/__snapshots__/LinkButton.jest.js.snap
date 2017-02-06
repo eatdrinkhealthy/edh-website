@@ -1,23 +1,25 @@
-exports[`<LinkButton /> css matches snapshot 1`] = `
-"{
-  \"rules\": {
-    \"backgroundColor\": \"darkslategray\",
-    \"border\": \"none\",
-    \"borderRadius\": \"4px\",
-    \"color\": \"white\",
-    \"padding\": \"8px 32px 8px 32px\",
-    \"textAlign\": \"center\",
-    \"textDecoration\": \"none\",
-    \"fontSize\": \"12px\"
-  },
-  \"className\": \"css-15br13v\"
-}"
-`;
-
-exports[`<LinkButton /> render matches snapshot 1`] = `
+exports[`<LinkButton /> matches render snapshot 1`] = `
 <a
   className="css-15br13v"
   href="some link">
   some button text
 </a>
+`;
+
+exports[`<LinkButton /> matches style / css snapshot 1`] = `
+"[
+  {
+    \"rules\": {
+      \"backgroundColor\": \"darkslategray\",
+      \"border\": \"none\",
+      \"borderRadius\": \"4px\",
+      \"color\": \"white\",
+      \"padding\": \"8px 32px 8px 32px\",
+      \"textAlign\": \"center\",
+      \"textDecoration\": \"none\",
+      \"fontSize\": \"12px\"
+    },
+    \"className\": \"css-15br13v\"
+  }
+]"
 `;

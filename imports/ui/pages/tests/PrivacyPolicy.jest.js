@@ -4,7 +4,6 @@
 
 import React from "react";
 import renderer from "react-test-renderer";
-import { shallow } from "enzyme";
 import PrivacyPolicy from "../PrivacyPolicy";
 import {
   formattedJSON,
@@ -18,7 +17,7 @@ describe("<PrivacyPolicy />", function () {
     expect(tree).toMatchSnapshot();
   });
 
-  it("css matches snapshot", function () {
+  it("style / css matches snapshot", function () {
     const allStyle = getAllComponentStyle(<PrivacyPolicy />, styles);
     expect(formattedJSON(allStyle)).toMatchSnapshot();
   });

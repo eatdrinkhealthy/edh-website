@@ -35,7 +35,6 @@ export function componentClassNameList(currComponent) {
 
 export function getClassNameStyleObj(className, stylesObj) {
   const styleKey = _.findKey(stylesObj, obj => (obj.className === className));
-
   return stylesObj[styleKey] || notFoundStatus(className);
 }
 

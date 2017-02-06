@@ -7,6 +7,4 @@ const Pitch = () => (
   </div>
 );
 
-Pitch.style = pitchStyle;
-
 export default Pitch;

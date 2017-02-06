@@ -1,22 +1,24 @@
-exports[`<Pitch /> css matches snapshot 1`] = `
-"{
-  \"rules\": {
-    \"paddingTop\": \"30px\",
-    \"fontSize\": \"15px\",
-    \"color\": \"white\",
-    \"display\": \"block\",
-    \"width\": \"226px\",
-    \"margin\": \"0 auto\",
-    \"paddingBottom\": \"30px\",
-    \"borderBottom\": \"1px solid rgba(255,255,255,0.6)\"
-  },
-  \"className\": \"css-1dl4n80\"
-}"
-`;
-
-exports[`<Pitch /> render matches snapshot 1`] = `
+exports[`<Pitch /> matches render snapshot 1`] = `
 <div
   className="css-1dl4n80">
   A platform to find, share, and discuss healthy places to shop and eat.
 </div>
+`;
+
+exports[`<Pitch /> matches style / css snapshot 1`] = `
+"[
+  {
+    \"rules\": {
+      \"paddingTop\": \"30px\",
+      \"fontSize\": \"15px\",
+      \"color\": \"white\",
+      \"display\": \"block\",
+      \"width\": \"226px\",
+      \"margin\": \"0 auto\",
+      \"paddingBottom\": \"30px\",
+      \"borderBottom\": \"1px solid rgba(255,255,255,0.6)\"
+    },
+    \"className\": \"css-1dl4n80\"
+  }
+]"
 `;

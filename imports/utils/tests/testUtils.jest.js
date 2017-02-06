@@ -3,7 +3,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
 import React from "react";
-import * as styles from "../../ui/styles";
 import {
   htmlClassList,
   componentClassNameList,
@@ -72,13 +71,18 @@ describe("testUtils", function () {
     });
 
     it("should not add duplicate classes", function () {
-      const htmlString =
+      let htmlString = `<div class="c1"><div class="c1">some text</div></div>`;
+      expect(htmlClassList(htmlString).length).toEqual(1);
+
+      htmlString = `<div class="c1"><div class="c2 c1">some text</div></div>`;
+      expect(htmlClassList(htmlString).length).toEqual(2);
+
+      htmlString =
         `<div class="c1">` +
         `<div class="c2 c3">some text here</div>` +
         `<div class="c1">Coming Soon</div>` +
         `<div class="c4 c3"></div>` +
         `</div>`;
-
       expect(htmlClassList(htmlString).length).toEqual(4);
     });
 
@@ -118,13 +122,36 @@ describe("testUtils", function () {
 
       expect(componentClassNameList(<ComplexComponent />).length).toEqual(5);
     });
+
+    it("creates an empty array when no classNames are found", function () {
+      const SimpleComponent = () => (
+        <div>
+          <h1>Title</h1>
+          <p>text</p>
+        </div>
+      );
+
+      expect(componentClassNameList(<SimpleComponent />).length).toEqual(0);
+    });
   });
 
   describe("Capture Styling / CSS Rules", function () {
+    // a sample styles object, matching local/project pattern with glamor styles
+    const styles = {
+      bigStyle: {
+        rules: { fontSize: "22px" },
+        className: "bigStyleHashName",
+      },
+      littleStyle: {
+        rules: { fontSize: "16px" },
+        className: "littleStyleHashName",
+      },
+    };
+
     describe("getClassNameStyleObj", function () {
       it("finds the style object by className", function () {
-        const foundStyleObj = getClassNameStyleObj(styles.logoStyle.className, styles);
-        expect(foundStyleObj).toEqual(styles.logoStyle);
+        const foundStyleObj = getClassNameStyleObj("bigStyleHashName", styles);
+        expect(foundStyleObj).toEqual(styles.bigStyle);
       });
 
       it("returns a 'not found status object' if className not found", function () {
@@ -135,21 +162,21 @@ describe("testUtils", function () {
 
     describe("classNamesToStyleObjList", function () {
       it("creates an array of style objects", function () {
-        const classNameList = [styles.logoStyle.className, styles.defaultPageStyle.className];
+        const classNameList = ["bigStyleHashName", "littleStyleHashName"];
         const ruleObjectsList = classNamesToStyleObjList(classNameList, styles);
 
         expect(Array.isArray((ruleObjectsList))).toBe(true);
         expect(typeof ruleObjectsList[0]).toBe("object");
 
-        expect(ruleObjectsList[0]).toEqual(styles.logoStyle);
-        expect(ruleObjectsList[1]).toEqual(styles.defaultPageStyle);
+        expect(ruleObjectsList[0]).toEqual(styles.bigStyle);
+        expect(ruleObjectsList[1]).toEqual(styles.littleStyle);
       });
 
       it("includes a 'not found' status if className not found", function () {
-        const classNameList = [styles.logoStyle.className, "badClassName"];
+        const classNameList = ["bigStyleHashName", "badClassName"];
         const ruleObjectsList = classNamesToStyleObjList(classNameList, styles);
 
-        expect(ruleObjectsList[0]).toEqual(styles.logoStyle);
+        expect(ruleObjectsList[0]).toEqual(styles.bigStyle);
         expect(ruleObjectsList[1]).toEqual(notFoundStatus("badClassName"));
       });
     });

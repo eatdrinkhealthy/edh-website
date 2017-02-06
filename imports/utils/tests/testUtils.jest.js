@@ -9,6 +9,7 @@ import {
   getClassNameStyleObj,
   classNamesToStyleObjList,
   notFoundStatus,
+  getAllComponentStyle,
 } from "./testUtils";
 
 describe("testUtils", function () {
@@ -22,21 +23,21 @@ describe("testUtils", function () {
   });
 
   describe("htmlClassList", function () {
-    it("should return an empty array if provided an empty html string", function () {
-      expect(htmlClassList("").length).toEqual(0);
-    });
-
-    it("should return an empty array if no classes are found", function () {
-      const htmlString = `<div><h1 id="main">some text</h1><h2>Coming Soon</h2><div></div></div>`;
-      expect(htmlClassList(htmlString).length).toEqual(0);
-    });
-
-    it("should find top level element classes", function () {
+    it("returns an array of class names when provided an html string with classes", function () {
       const htmlString = `<div class="c1"><div>some text</div><div>Coming Soon</div></div>`;
       expect(htmlClassList(htmlString).length).toEqual(1);
     });
 
-    it("should find deep nested classes", function () {
+    it("returns an empty array if provided an empty html string", function () {
+      expect(htmlClassList("").length).toEqual(0);
+    });
+
+    it("returns an empty array if no classes are found", function () {
+      const htmlString = `<div><h1 id="main">some text</h1><h2>Coming Soon</h2><div></div></div>`;
+      expect(htmlClassList(htmlString).length).toEqual(0);
+    });
+
+    it("finds deep nested classes", function () {
       const htmlString =
         `<div id="main">` +
         `<h1>some text here</h1>` +
@@ -51,12 +52,12 @@ describe("testUtils", function () {
       expect(htmlClassList(htmlString).length).toEqual(2);
     });
 
-    it("should find multiple unique classes per single element", function () {
+    it("finds multiple unique classes per single element", function () {
       const htmlString = `<div id="main"><h1 class="c1 c2">some text</h1></div>`;
       expect(htmlClassList(htmlString).length).toEqual(2);
     });
 
-    it("should find multiple unique classes per single element, even with extra spaces", function () {
+    it("finds multiple unique classes per single element, even with extra spaces", function () {
       let htmlString = `<div id="main"><h1 class="c1 c2 ">some text</h1></div>`;
       expect(htmlClassList(htmlString).length).toEqual(2);
 
@@ -70,7 +71,7 @@ describe("testUtils", function () {
       expect(htmlClassList(htmlString).length).toEqual(2);
     });
 
-    it("should not add duplicate classes", function () {
+    it("does not add duplicate classes", function () {
       let htmlString = `<div class="c1"><div class="c1">some text</div></div>`;
       expect(htmlClassList(htmlString).length).toEqual(1);
 
@@ -86,14 +87,14 @@ describe("testUtils", function () {
       expect(htmlClassList(htmlString).length).toEqual(4);
     });
 
-    it("should not added duplicate classes, even if listed in same element twice", function () {
+    it("does not add duplicate classes, even if listed in same element twice", function () {
       const htmlString = `<div><h1 class="c1 c1">some text</h1></div>`;
       expect(htmlClassList(htmlString).length).toEqual(1);
     });
   });
 
   describe("componentClassNameList", function () {
-    it("puts all unique class names of a component in an array", function () {
+    it("returns an array of unique class names of given a component", function () {
       const SimpleComponent = () => (
         <div className="c1">
           <h1 className="c2">Title</h1>
@@ -149,7 +150,7 @@ describe("testUtils", function () {
     };
 
     describe("getClassNameStyleObj", function () {
-      it("finds the style object by className", function () {
+      it("returns the found style object for a given className", function () {
         const foundStyleObj = getClassNameStyleObj("bigStyleHashName", styles);
         expect(foundStyleObj).toEqual(styles.bigStyle);
       });
@@ -185,6 +186,37 @@ describe("testUtils", function () {
 
         expect(ruleObjectsList[0]).toEqual(styles.bigStyle);
         expect(ruleObjectsList[1]).toEqual(notFoundStatus("badClassName"));
+      });
+    });
+
+    describe("getAllComponentStyle", function () {
+      it("returns an array of style objects for a given component", function () {
+        const SimpleComponent = () => (
+          <div>
+            <h1 className="bigStyleHashName">Title</h1>
+            <p className="littleStyleHashName">text</p>
+          </div>
+        );
+
+        const styleArray = getAllComponentStyle(<SimpleComponent />, styles);
+        expect(styleArray.length).toEqual(2);
+        expect(Array.isArray((styleArray))).toBe(true);
+        expect(typeof styleArray[0]).toBe("object");
+        expect(styleArray[0]).toEqual(styles.bigStyle);
+        expect(styleArray[1]).toEqual(styles.littleStyle);
+      });
+
+      it("returns an empty array when given component has no styles", function () {
+        const SimpleComponent = () => (
+          <div>
+            <h1>Title</h1>
+            <p>text</p>
+          </div>
+        );
+
+        const styleArray = getAllComponentStyle(<SimpleComponent />, styles);
+        expect(styleArray.length).toEqual(0);
+        expect(Array.isArray((styleArray))).toBe(true);
       });
     });
   });

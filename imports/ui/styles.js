@@ -37,21 +37,6 @@ export const companyNameStyle = {
   className: `${css(companyNameRules)}`,
 };
 
-const linkButtonRules = {
-  backgroundColor: "darkslategray",
-  border: "none",
-  borderRadius: "4px",
-  color: "white",
-  padding: "8px 32px 8px 32px",
-  textAlign: "center",
-  textDecoration: "none",
-  fontSize: "12px",
-};
-export const linkButtonStyle = {
-  rules: linkButtonRules,
-  className: `${css(linkButtonRules)}`,
-};
-
 const pitchRules = {
   paddingTop: "30px",
   fontSize: "15px",
@@ -110,10 +95,26 @@ export const appLinksHeaderStyle = {
 
 const appLinksButtonsRules = {
   marginTop: "14px",
-  marginLeft: "40px",
   marginBottom: "20px",
+  marginLeft: "40px",
 };
 export const appLinksButtonsStyle = {
   rules: appLinksButtonsRules,
   className: `${css(appLinksButtonsRules)}`,
+};
+
+const linkButtonRules = {
+  backgroundColor: "darkslategray",
+  border: "none",
+  borderRadius: "4px",
+  color: "white",
+  padding: "8px 32px 8px 32px",
+  margin: "8px 8px 8px 8px",
+  textAlign: "center",
+  textDecoration: "none",
+  fontSize: "12px",
+};
+export const linkButtonStyle = {
+  rules: linkButtonRules,
+  className: `${css(linkButtonRules)}`,
 };

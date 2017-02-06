@@ -4,16 +4,19 @@ exports[`<Preview /> matches render snapshot 1`] = `
     className="css-m58pgh">
     Early Version Preview...
   </div>
-  <a
-    className="css-15br13v"
-    href="https://app.eatdrinkhealthy.co/">
-    Web App
-  </a>
-  <a
-    className="css-15br13v"
-    href="https://itunes.apple.com/app/id1116167404">
-    App Store
-  </a>
+  <div
+    className="css-lfdzya">
+    <a
+      className="css-1obokwp"
+      href="https://app.eatdrinkhealthy.co/">
+      Web App
+    </a>
+    <a
+      className="css-1obokwp"
+      href="https://itunes.apple.com/app/id1116167404">
+      App Store
+    </a>
+  </div>
 </div>
 `;
 
@@ -30,16 +33,25 @@ exports[`<Preview /> matches style / css snapshot 1`] = `
   },
   {
     \"rules\": {
+      \"marginTop\": \"14px\",
+      \"marginBottom\": \"20px\",
+      \"marginLeft\": \"40px\"
+    },
+    \"className\": \"css-lfdzya\"
+  },
+  {
+    \"rules\": {
       \"backgroundColor\": \"darkslategray\",
       \"border\": \"none\",
       \"borderRadius\": \"4px\",
       \"color\": \"white\",
       \"padding\": \"8px 32px 8px 32px\",
+      \"margin\": \"8px 8px 8px 8px\",
       \"textAlign\": \"center\",
       \"textDecoration\": \"none\",
       \"fontSize\": \"12px\"
     },
-    \"className\": \"css-15br13v\"
+    \"className\": \"css-1obokwp\"
   }
 ]"
 `;

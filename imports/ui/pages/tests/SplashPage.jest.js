@@ -8,7 +8,11 @@ import {
 } from "enzyme";
 import renderer from "react-test-renderer";
 import SplashPage from "../SplashPage";
-import { componentClassNameList, formattedJSON } from "../../../utils/tests/testUtils";
+import {
+  formattedJSON,
+  getAllComponentStyle,
+} from "../../../utils/tests/testUtils";
+import * as styles from "../../../ui/styles";
 
 describe("<SplashPage />", function () {
   it("matches render snapshot", function () {
@@ -16,10 +20,9 @@ describe("<SplashPage />", function () {
     expect(tree).toMatchSnapshot();
   });
 
-  it("matches css snapshot", function () {
-    // TODO complete getting classes to snapshot
-    const classList = componentClassNameList(<SplashPage />);
-    expect(formattedJSON(classList)).toMatchSnapshot();
+  it("matches style / css snapshot", function () {
+    const allStyle = getAllComponentStyle(<SplashPage />, styles);
+    expect(formattedJSON(allStyle)).toMatchSnapshot();
   });
 
   it("contains sections company name, pitch, coming soon, logo, preview ", function () {

@@ -1,13 +1,3 @@
-exports[`<SplashPage /> matches css snapshot 1`] = `
-"[
-  \"css-wlbfil\",
-  \"css-nkpr7m\",
-  \"css-1dl4n80\",
-  \"css-cdesk3\",
-  \"css-o94tcm\"
-]"
-`;
-
 exports[`<SplashPage /> matches render snapshot 1`] = `
 <div
   className="css-wlbfil">
@@ -24,4 +14,76 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
   <div
     className="css-o94tcm" />
 </div>
+`;
+
+exports[`<SplashPage /> matches style / css snapshot 1`] = `
+"[
+  {
+    \"rules\": {
+      \"background\": [
+        \"#048ec5\",
+        \"-moz-linear-gradient(-45deg, #048ec5 0%, #2ecc71 100%) fixed\",
+        \"-webkit-linear-gradient(-45deg, #048ec5 0%,#2ecc71 100%) fixed\",
+        \"-webkit-linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed\",
+        \"-moz-linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed\",
+        \"linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed\"
+      ],
+      \"filter\": \"progid:DXImageTransform.Microsoft.gradient( startColorstr=\'#048ec5\', endColorstr=\'#2ecc71\',GradientType=1 )\",
+      \"color\": \"white\",
+      \"padding\": \"30px\"
+    },
+    \"className\": \"css-wlbfil\"
+  },
+  {
+    \"rules\": {
+      \"backgroundImage\": \"url(\'/images/logo.png\')\",
+      \"backgroundSize\": \"100%\",
+      \"backgroundRepeat\": \"no-repeat\",
+      \"width\": \"226px\",
+      \"height\": \"156px\",
+      \"display\": \"block\",
+      \"margin\": \"90px auto 0\"
+    },
+    \"className\": \"css-nkpr7m\"
+  },
+  {
+    \"rules\": {
+      \"paddingTop\": \"30px\",
+      \"fontSize\": \"15px\",
+      \"color\": \"white\",
+      \"display\": \"block\",
+      \"width\": \"226px\",
+      \"margin\": \"0 auto\",
+      \"paddingBottom\": \"30px\",
+      \"borderBottom\": \"1px solid rgba(255,255,255,0.6)\"
+    },
+    \"className\": \"css-1dl4n80\"
+  },
+  {
+    \"rules\": {
+      \"fontFamily\": \"Montserrat\",
+      \"paddingTop\": \"30px\",
+      \"fontSize\": \"20px\",
+      \"fontWeight\": \"bold\",
+      \"textAlign\": \"center\",
+      \"color\": \"white\",
+      \"paddingBottom\": \"30px\",
+      \"borderBottom\": \"1px solid rgba(255,255,255,0.6)\",
+      \"display\": \"block\",
+      \"width\": \"226px\",
+      \"margin\": \"0 auto\"
+    },
+    \"className\": \"css-cdesk3\"
+  },
+  {
+    \"rules\": {
+      \"backgroundImage\": \"url(\'/images/ios-icon.png\')\",
+      \"backgroundSize\": \"100%\",
+      \"width\": \"90px\",
+      \"height\": \"90px\",
+      \"margin\": \"30px auto\"
+    },
+    \"className\": \"css-o94tcm\"
+  }
+]"
 `;

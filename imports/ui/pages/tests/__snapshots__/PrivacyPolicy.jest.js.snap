@@ -1,4 +1,4 @@
-exports[`<PrivacyPolicy /> render matches snapshot 1`] = `
+exports[`<PrivacyPolicy /> matches render snapshot 1`] = `
 <div
   className="css-wlbfil">
   <h1>
@@ -83,7 +83,7 @@ exports[`<PrivacyPolicy /> render matches snapshot 1`] = `
 </div>
 `;
 
-exports[`<PrivacyPolicy /> style / css matches snapshot 1`] = `
+exports[`<PrivacyPolicy /> matches style / css snapshot 1`] = `
 "[
   {
     \"rules\": {

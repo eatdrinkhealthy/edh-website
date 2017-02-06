@@ -12,12 +12,12 @@ import {
 import * as styles from "../../../ui/styles";
 
 describe("<PrivacyPolicy />", function () {
-  it("render matches snapshot", function () {
+  it("matches render snapshot", function () {
     const tree = renderer.create(<PrivacyPolicy />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  it("style / css matches snapshot", function () {
+  it("matches style / css snapshot", function () {
     const allStyle = getAllComponentStyle(<PrivacyPolicy />, styles);
     expect(formattedJSON(allStyle)).toMatchSnapshot();
   });

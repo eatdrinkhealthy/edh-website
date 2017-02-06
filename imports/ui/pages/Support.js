@@ -8,6 +8,4 @@ const Support = () => (
   </div>
 );
 
-Support.style = defaultPageStyle;
-
 export default Support;

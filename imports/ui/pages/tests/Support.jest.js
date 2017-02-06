@@ -1,20 +1,24 @@
 /* eslint-env jest */
 /* eslint-disable func-names, prefer-arrow-callback, no-unused-expressions */
+/* eslint-disable import/no-extraneous-dependencies */
 
 import React from "react";
 import renderer from "react-test-renderer";
-import { shallow } from "enzyme";
 import Support from "../Support";
-import { formattedJSON } from "../../../utils/tests/testUtils";
+import {
+  formattedJSON,
+  getAllComponentStyle,
+} from "../../../utils/tests/testUtils";
+import * as styles from "../../../ui/styles";
 
 describe("<Support />", function () {
-  it("render matches snapshot", function () {
+  it("matches render snapshot", function () {
     const tree = renderer.create(<Support />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  it("css matches snapshot", function () {
-    expect(shallow(<Support />).hasClass(Support.style.className)).toBe(true);
-    expect(formattedJSON(Support.style)).toMatchSnapshot();
+  it("matches style / css snapshot", function () {
+    const allStyle = getAllComponentStyle(<Support />, styles);
+    expect(formattedJSON(allStyle)).toMatchSnapshot();
   });
 });

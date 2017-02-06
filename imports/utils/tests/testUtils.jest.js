@@ -172,6 +172,13 @@ describe("testUtils", function () {
         expect(ruleObjectsList[1]).toEqual(styles.littleStyle);
       });
 
+      it("creates an empty array when given empty class name list", function () {
+        const ruleObjectsList = classNamesToStyleObjList([], styles);
+
+        expect(Array.isArray((ruleObjectsList))).toBe(true);
+        expect(ruleObjectsList.length).toBe(0);
+      });
+
       it("includes a 'not found' status if className not found", function () {
         const classNameList = ["bigStyleHashName", "badClassName"];
         const ruleObjectsList = classNamesToStyleObjList(classNameList, styles);

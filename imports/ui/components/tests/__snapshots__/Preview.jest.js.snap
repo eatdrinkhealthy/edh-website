@@ -1,0 +1,7 @@
+exports[`<Preview /> matches render snapshot 1`] = `
+<div>
+  Preview
+</div>
+`;
+
+exports[`<Preview /> matches style / css snapshot 1`] = `"[]"`;

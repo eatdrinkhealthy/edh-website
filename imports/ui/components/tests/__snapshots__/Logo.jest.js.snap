@@ -1,4 +1,9 @@
-exports[`<Logo /> matches css snapshot 1`] = `
+exports[`<Logo /> matches render snapshot 1`] = `
+<div
+  className="css-o94tcm" />
+`;
+
+exports[`<Logo /> matches style / css snapshot 1`] = `
 "[
   {
     \"rules\": {
@@ -11,9 +16,4 @@ exports[`<Logo /> matches css snapshot 1`] = `
     \"className\": \"css-o94tcm\"
   }
 ]"
-`;
-
-exports[`<Logo /> matches render snapshot 1`] = `
-<div
-  className="css-o94tcm" />
 `;

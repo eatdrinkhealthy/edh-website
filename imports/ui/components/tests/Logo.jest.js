@@ -17,7 +17,7 @@ describe("<Logo />", function () {
     expect(tree).toMatchSnapshot();
   });
 
-  it("matches css snapshot", function () {
+  it("matches style / css snapshot", function () {
     const allStyle = getAllComponentStyle(<Logo />, styles);
     expect(formattedJSON(allStyle)).toMatchSnapshot();
   });

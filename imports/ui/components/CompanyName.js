@@ -5,6 +5,4 @@ const CompanyName = () => (
   <div className={companyNameStyle.className} />
 );
 
-CompanyName.style = companyNameStyle;
-
 export default CompanyName;

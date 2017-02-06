@@ -18,6 +18,10 @@ a simple splash page with links to the web and mobile app, for now.  (this site 
     - must also import the less file(s) in source or config.js
     - for serving files (images), add [static content directory flag](https://getstorybook.io/docs/react-storybook/configurations/serving-static-files) to storybook script (see package.json)
         + eg, storybook -s ./public  ...
+    - Story file location and naming convention
+        + filename.stories.js
+        + place in `__stories__/` directory in a `tests/` directory
+            - although source files in the imports directory are not eagerly loaded for the build, by placing them in a tests/ directory, a running server in dev mode will not restart when changes are made to the file
 * Configuration
     - storybook files are placed in `/__stories__/` directories, and follow a naming convention of `*.stories.jsx?`
 ### Styling

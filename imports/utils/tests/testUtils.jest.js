@@ -4,6 +4,7 @@
 
 import React from "react";
 import {
+  formattedJSON,
   htmlClassList,
   componentClassNameList,
   getStyleObject,
@@ -13,6 +14,13 @@ import {
 } from "./testUtils";
 
 describe("testUtils", function () {
+  describe("formattedJSON", function () {
+    it("formats JSON stringify, multiline indented with 2 spaces", function () {
+      const smallArray = ["abc", "def", 123];
+      expect(formattedJSON(smallArray)).toBe(`[\n  "abc",\n  "def",\n  123\n]`);
+    });
+  });
+
   describe("notFoundStatus", function () {
     it("creates a new object with a className and status property of 'not found'", function () {
       expect(notFoundStatus("thisClass")).toEqual({

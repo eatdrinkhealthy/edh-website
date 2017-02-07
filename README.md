@@ -30,9 +30,11 @@ a simple splash page with links to the web and mobile app, for now.  (this site 
     - may punt on this convention if ill side effects discovered or code becomes too verbose
     - __TODO:__ consider / investigate alternate manner for capturing css values
         + window.getComputedStyle?  use a different renderer? dig through glamor test code?
+* Use of gradientBackgroundRules in styles.js may be unnecessary (since it is set for html in main.less as well)
 
 ### Testing
 * when testing with a snapshot, __be sure to THOROUGHLY examine the first created snapshot file__
     - it is possible that the snapshot may contain json you are not expecting, even an error, which can still match when subsequently comparing
     - consider adding an additional test condition / expect when snapshot testing, to confirm you are getting the type of snapshot you are expecting, and not something like 'undefined'
         + eg, adding a hasClass check, is informative when doing TDD and snapshot is not yet finalized or captured
+   

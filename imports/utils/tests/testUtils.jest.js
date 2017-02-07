@@ -33,7 +33,7 @@ describe("testUtils", function () {
   describe("htmlClassList", function () {
     it("returns an array of class names when provided an html string with classes", function () {
       const htmlString = `<div class="c1"><div>some text</div><div>Coming Soon</div></div>`;
-      expect(htmlClassList(htmlString).length).toEqual(11);
+      expect(htmlClassList(htmlString).length).toEqual(1);
     });
 
     it("returns an empty array if provided an empty html string", function () {

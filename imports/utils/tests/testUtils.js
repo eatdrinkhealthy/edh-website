@@ -33,17 +33,16 @@ export function componentClassNameList(currComponent) {
   return htmlClassList(mountedHTML);
 }
 
-export function getClassNameStyleObj(className, stylesObj) {
+export function getStyleObject(className, stylesObj) {
   const styleKey = _.findKey(stylesObj, obj => (obj.className === className));
   return stylesObj[styleKey] || notFoundStatus(className);
 }
 
-export function classNamesToStyleObjList(classNameList, styles) {
-  const styleObjectList = classNameList.map(className => (getClassNameStyleObj(className, styles)));
-  return styleObjectList;
+export function getStyleObjectList(classNameList, styles) {
+  return classNameList.map(className => (getStyleObject(className, styles)));
 }
 
 export function getAllComponentStyle(currComponent, styles) {
   const classNameList = componentClassNameList(currComponent);
-  return classNamesToStyleObjList(classNameList, styles);
+  return getStyleObjectList(classNameList, styles);
 }

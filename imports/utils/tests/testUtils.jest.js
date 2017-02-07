@@ -6,8 +6,8 @@ import React from "react";
 import {
   htmlClassList,
   componentClassNameList,
-  getClassNameStyleObj,
-  classNamesToStyleObjList,
+  getStyleObject,
+  getStyleObjectList,
   notFoundStatus,
   getAllComponentStyle,
 } from "./testUtils";
@@ -149,22 +149,22 @@ describe("testUtils", function () {
       },
     };
 
-    describe("getClassNameStyleObj", function () {
+    describe("getStyleObject", function () {
       it("returns the found style object for a given className", function () {
-        const foundStyleObj = getClassNameStyleObj("bigStyleHashName", styles);
+        const foundStyleObj = getStyleObject("bigStyleHashName", styles);
         expect(foundStyleObj).toEqual(styles.bigStyle);
       });
 
       it("returns a 'not found status object' if className not found", function () {
-        const foundStyleObj = getClassNameStyleObj("badClassName", styles);
+        const foundStyleObj = getStyleObject("badClassName", styles);
         expect(foundStyleObj).toEqual(notFoundStatus("badClassName"));
       });
     });
 
-    describe("classNamesToStyleObjList", function () {
+    describe("getStyleObjectList", function () {
       it("creates an array of style objects", function () {
         const classNameList = ["bigStyleHashName", "littleStyleHashName"];
-        const ruleObjectsList = classNamesToStyleObjList(classNameList, styles);
+        const ruleObjectsList = getStyleObjectList(classNameList, styles);
 
         expect(Array.isArray((ruleObjectsList))).toBe(true);
         expect(typeof ruleObjectsList[0]).toBe("object");
@@ -174,7 +174,7 @@ describe("testUtils", function () {
       });
 
       it("creates an empty array when given empty class name list", function () {
-        const ruleObjectsList = classNamesToStyleObjList([], styles);
+        const ruleObjectsList = getStyleObjectList([], styles);
 
         expect(Array.isArray((ruleObjectsList))).toBe(true);
         expect(ruleObjectsList.length).toBe(0);
@@ -182,7 +182,7 @@ describe("testUtils", function () {
 
       it("includes a 'not found' status if className not found", function () {
         const classNameList = ["bigStyleHashName", "badClassName"];
-        const ruleObjectsList = classNamesToStyleObjList(classNameList, styles);
+        const ruleObjectsList = getStyleObjectList(classNameList, styles);
 
         expect(ruleObjectsList[0]).toEqual(styles.bigStyle);
         expect(ruleObjectsList[1]).toEqual(notFoundStatus("badClassName"));

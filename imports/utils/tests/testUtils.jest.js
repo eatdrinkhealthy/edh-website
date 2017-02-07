@@ -15,7 +15,7 @@ import {
 
 describe("testUtils", function () {
   describe("formattedJSON", function () {
-    it("formats JSON stringify, multiline indented with 2 spaces", function () {
+    it("formats JSON stringify, multi-line indented with 2 spaces", function () {
       const smallArray = ["abc", "def", 123];
       expect(formattedJSON(smallArray)).toBe(`[\n  "abc",\n  "def",\n  123\n]`);
     });

@@ -7,7 +7,7 @@ import Logo from "../components/Logo";
 import Preview from "../components/Preview";
 
 const SplashPage = () => (
-  <div className={defaultPageStyle.className}>
+  <div>
     <CompanyName />
     <Pitch />
     <ComingSoon />

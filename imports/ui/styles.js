@@ -107,7 +107,7 @@ const linkButtonRules = {
   borderRadius: "4px",
   color: "white",
   padding: "8px 32px 8px 32px",
-  margin: "8px 8px 8px 8px",
+  marginRight: "8px",
   textAlign: "center",
   textDecoration: "none",
   fontSize: "12px",

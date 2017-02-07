@@ -21,12 +21,12 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
     <div
       className="css-lfdzya">
       <a
-        className="css-1obokwp"
+        className="css-1trporh"
         href="https://app.eatdrinkhealthy.co/">
         Web App
       </a>
       <a
-        className="css-1obokwp"
+        className="css-1trporh"
         href="https://itunes.apple.com/app/id1116167404">
         App Store
       </a>
@@ -128,12 +128,12 @@ exports[`<SplashPage /> matches style / css snapshot 1`] = `
       \"borderRadius\": \"4px\",
       \"color\": \"white\",
       \"padding\": \"8px 32px 8px 32px\",
-      \"margin\": \"8px 8px 8px 8px\",
+      \"marginRight\": \"8px\",
       \"textAlign\": \"center\",
       \"textDecoration\": \"none\",
       \"fontSize\": \"12px\"
     },
-    \"className\": \"css-1obokwp\"
+    \"className\": \"css-1trporh\"
   }
 ]"
 `;

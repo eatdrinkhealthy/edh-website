@@ -1,0 +1,21 @@
+exports[`<CompanyName /> matches render snapshot 1`] = `
+<div
+  className="css-nkpr7m" />
+`;
+
+exports[`<CompanyName /> matches style / css snapshot 1`] = `
+"[
+  {
+    \"rules\": {
+      \"backgroundImage\": \"url(\'/images/logo.png\')\",
+      \"backgroundSize\": \"100%\",
+      \"backgroundRepeat\": \"no-repeat\",
+      \"width\": \"226px\",
+      \"height\": \"156px\",
+      \"display\": \"block\",
+      \"margin\": \"90px auto 0\"
+    },
+    \"className\": \"css-nkpr7m\"
+  }
+]"
+`;

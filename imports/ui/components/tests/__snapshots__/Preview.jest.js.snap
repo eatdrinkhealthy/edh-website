@@ -1,0 +1,57 @@
+exports[`<Preview /> matches render snapshot 1`] = `
+<div>
+  <div
+    className="css-m58pgh">
+    Early Version Preview...
+  </div>
+  <div
+    className="css-lfdzya">
+    <a
+      className="css-1trporh"
+      href="https://app.eatdrinkhealthy.co/">
+      Web App
+    </a>
+    <a
+      className="css-1trporh"
+      href="https://itunes.apple.com/app/id1116167404">
+      App Store
+    </a>
+  </div>
+</div>
+`;
+
+exports[`<Preview /> matches style / css snapshot 1`] = `
+"[
+  {
+    \"rules\": {
+      \"marginTop\": \"90px\",
+      \"marginLeft\": \"40px\",
+      \"fontSize\": \"16px\",
+      \"color\": \"white\"
+    },
+    \"className\": \"css-m58pgh\"
+  },
+  {
+    \"rules\": {
+      \"marginTop\": \"14px\",
+      \"marginBottom\": \"20px\",
+      \"marginLeft\": \"40px\"
+    },
+    \"className\": \"css-lfdzya\"
+  },
+  {
+    \"rules\": {
+      \"backgroundColor\": \"darkslategray\",
+      \"border\": \"none\",
+      \"borderRadius\": \"4px\",
+      \"color\": \"white\",
+      \"padding\": \"8px 32px 8px 32px\",
+      \"marginRight\": \"8px\",
+      \"textAlign\": \"center\",
+      \"textDecoration\": \"none\",
+      \"fontSize\": \"12px\"
+    },
+    \"className\": \"css-1trporh\"
+  }
+]"
+`;

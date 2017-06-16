@@ -1,32 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<SplashPage /> matches render snapshot 1`] = `
 <div>
   <div
-    className="css-nkpr7m" />
+    className="css-nkpr7m"
+  />
   <div
-    className="css-1dl4n80">
+    className="css-1dl4n80"
+  >
     A platform to find, share, and discuss healthy places to shop and eat.
   </div>
   <div
-    className="css-cdesk3">
+    className="css-cdesk3"
+  >
     Coming Soon
   </div>
   <div
-    className="css-o94tcm" />
+    className="css-o94tcm"
+  />
   <div>
     <div
-      className="css-m58pgh">
+      className="css-m58pgh"
+    >
       Early Version Preview...
     </div>
     <div
-      className="css-lfdzya">
+      className="css-lfdzya"
+    >
       <a
         className="css-1trporh"
-        href="https://app.eatdrinkhealthy.co/">
+        href="https://app.eatdrinkhealthy.co/"
+      >
         Web App
       </a>
       <a
         className="css-1trporh"
-        href="https://itunes.apple.com/app/id1116167404">
+        href="https://itunes.apple.com/app/id1116167404"
+      >
         App Store
       </a>
     </div>
@@ -37,86 +47,86 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
 exports[`<SplashPage /> matches style / css snapshot 1`] = `
 "[
   {
-    \"rules\": {
-      \"backgroundImage\": \"url(\'/images/logo.png\')\",
-      \"backgroundSize\": \"100%\",
-      \"backgroundRepeat\": \"no-repeat\",
-      \"width\": \"226px\",
-      \"height\": \"156px\",
-      \"display\": \"block\",
-      \"margin\": \"90px auto 0\"
+    \\"rules\\": {
+      \\"backgroundImage\\": \\"url('/images/logo.png')\\",
+      \\"backgroundSize\\": \\"100%\\",
+      \\"backgroundRepeat\\": \\"no-repeat\\",
+      \\"width\\": \\"226px\\",
+      \\"height\\": \\"156px\\",
+      \\"display\\": \\"block\\",
+      \\"margin\\": \\"90px auto 0\\"
     },
-    \"className\": \"css-nkpr7m\"
+    \\"className\\": \\"css-nkpr7m\\"
   },
   {
-    \"rules\": {
-      \"paddingTop\": \"30px\",
-      \"fontSize\": \"15px\",
-      \"color\": \"white\",
-      \"display\": \"block\",
-      \"width\": \"226px\",
-      \"margin\": \"0 auto\",
-      \"paddingBottom\": \"30px\",
-      \"borderBottom\": \"1px solid rgba(255,255,255,0.6)\"
+    \\"rules\\": {
+      \\"paddingTop\\": \\"30px\\",
+      \\"fontSize\\": \\"15px\\",
+      \\"color\\": \\"white\\",
+      \\"display\\": \\"block\\",
+      \\"width\\": \\"226px\\",
+      \\"margin\\": \\"0 auto\\",
+      \\"paddingBottom\\": \\"30px\\",
+      \\"borderBottom\\": \\"1px solid rgba(255,255,255,0.6)\\"
     },
-    \"className\": \"css-1dl4n80\"
+    \\"className\\": \\"css-1dl4n80\\"
   },
   {
-    \"rules\": {
-      \"fontFamily\": \"Montserrat\",
-      \"paddingTop\": \"30px\",
-      \"fontSize\": \"20px\",
-      \"fontWeight\": \"bold\",
-      \"textAlign\": \"center\",
-      \"color\": \"white\",
-      \"paddingBottom\": \"30px\",
-      \"borderBottom\": \"1px solid rgba(255,255,255,0.6)\",
-      \"display\": \"block\",
-      \"width\": \"226px\",
-      \"margin\": \"0 auto\"
+    \\"rules\\": {
+      \\"fontFamily\\": \\"Montserrat\\",
+      \\"paddingTop\\": \\"30px\\",
+      \\"fontSize\\": \\"20px\\",
+      \\"fontWeight\\": \\"bold\\",
+      \\"textAlign\\": \\"center\\",
+      \\"color\\": \\"white\\",
+      \\"paddingBottom\\": \\"30px\\",
+      \\"borderBottom\\": \\"1px solid rgba(255,255,255,0.6)\\",
+      \\"display\\": \\"block\\",
+      \\"width\\": \\"226px\\",
+      \\"margin\\": \\"0 auto\\"
     },
-    \"className\": \"css-cdesk3\"
+    \\"className\\": \\"css-cdesk3\\"
   },
   {
-    \"rules\": {
-      \"backgroundImage\": \"url(\'/images/ios-icon.png\')\",
-      \"backgroundSize\": \"100%\",
-      \"width\": \"90px\",
-      \"height\": \"90px\",
-      \"margin\": \"30px auto\"
+    \\"rules\\": {
+      \\"backgroundImage\\": \\"url('/images/ios-icon.png')\\",
+      \\"backgroundSize\\": \\"100%\\",
+      \\"width\\": \\"90px\\",
+      \\"height\\": \\"90px\\",
+      \\"margin\\": \\"30px auto\\"
     },
-    \"className\": \"css-o94tcm\"
+    \\"className\\": \\"css-o94tcm\\"
   },
   {
-    \"rules\": {
-      \"marginTop\": \"90px\",
-      \"marginLeft\": \"40px\",
-      \"fontSize\": \"16px\",
-      \"color\": \"white\"
+    \\"rules\\": {
+      \\"marginTop\\": \\"90px\\",
+      \\"marginLeft\\": \\"40px\\",
+      \\"fontSize\\": \\"16px\\",
+      \\"color\\": \\"white\\"
     },
-    \"className\": \"css-m58pgh\"
+    \\"className\\": \\"css-m58pgh\\"
   },
   {
-    \"rules\": {
-      \"marginTop\": \"14px\",
-      \"marginBottom\": \"20px\",
-      \"marginLeft\": \"40px\"
+    \\"rules\\": {
+      \\"marginTop\\": \\"14px\\",
+      \\"marginBottom\\": \\"20px\\",
+      \\"marginLeft\\": \\"40px\\"
     },
-    \"className\": \"css-lfdzya\"
+    \\"className\\": \\"css-lfdzya\\"
   },
   {
-    \"rules\": {
-      \"backgroundColor\": \"darkslategray\",
-      \"border\": \"none\",
-      \"borderRadius\": \"4px\",
-      \"color\": \"white\",
-      \"padding\": \"8px 32px 8px 32px\",
-      \"marginRight\": \"8px\",
-      \"textAlign\": \"center\",
-      \"textDecoration\": \"none\",
-      \"fontSize\": \"12px\"
+    \\"rules\\": {
+      \\"backgroundColor\\": \\"darkslategray\\",
+      \\"border\\": \\"none\\",
+      \\"borderRadius\\": \\"4px\\",
+      \\"color\\": \\"white\\",
+      \\"padding\\": \\"8px 32px 8px 32px\\",
+      \\"marginRight\\": \\"8px\\",
+      \\"textAlign\\": \\"center\\",
+      \\"textDecoration\\": \\"none\\",
+      \\"fontSize\\": \\"12px\\"
     },
-    \"className\": \"css-1trporh\"
+    \\"className\\": \\"css-1trporh\\"
   }
 ]"
 `;

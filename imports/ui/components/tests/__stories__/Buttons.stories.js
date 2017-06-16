@@ -3,7 +3,7 @@
 import React from "react";
 import {
   storiesOf,
-} from "@kadira/storybook";
+} from "@storybook/react";
 import LinkButton from "../../LinkButton";
 
 storiesOf("Buttons", module)

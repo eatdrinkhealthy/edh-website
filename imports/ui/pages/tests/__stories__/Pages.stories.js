@@ -3,7 +3,7 @@
 import React from "react";
 import {
   storiesOf,
-} from "@kadira/storybook";
+} from "@storybook/react";
 import SplashPage from "../../SplashPage";
 import Support from "../../Support";
 import PrivacyPolicy from "../../PrivacyPolicy";

@@ -1,6 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<ComingSoon /> matches render snapshot 1`] = `
 <div
-  className="css-cdesk3">
+  className="css-cdesk3"
+>
   Coming Soon
 </div>
 `;
@@ -8,20 +11,20 @@ exports[`<ComingSoon /> matches render snapshot 1`] = `
 exports[`<ComingSoon /> matches style / css snapshot 1`] = `
 "[
   {
-    \"rules\": {
-      \"fontFamily\": \"Montserrat\",
-      \"paddingTop\": \"30px\",
-      \"fontSize\": \"20px\",
-      \"fontWeight\": \"bold\",
-      \"textAlign\": \"center\",
-      \"color\": \"white\",
-      \"paddingBottom\": \"30px\",
-      \"borderBottom\": \"1px solid rgba(255,255,255,0.6)\",
-      \"display\": \"block\",
-      \"width\": \"226px\",
-      \"margin\": \"0 auto\"
+    \\"rules\\": {
+      \\"fontFamily\\": \\"Montserrat\\",
+      \\"paddingTop\\": \\"30px\\",
+      \\"fontSize\\": \\"20px\\",
+      \\"fontWeight\\": \\"bold\\",
+      \\"textAlign\\": \\"center\\",
+      \\"color\\": \\"white\\",
+      \\"paddingBottom\\": \\"30px\\",
+      \\"borderBottom\\": \\"1px solid rgba(255,255,255,0.6)\\",
+      \\"display\\": \\"block\\",
+      \\"width\\": \\"226px\\",
+      \\"margin\\": \\"0 auto\\"
     },
-    \"className\": \"css-cdesk3\"
+    \\"className\\": \\"css-cdesk3\\"
   }
 ]"
 `;

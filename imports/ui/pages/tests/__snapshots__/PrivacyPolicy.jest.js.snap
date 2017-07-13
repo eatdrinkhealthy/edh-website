@@ -1,6 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<PrivacyPolicy /> matches render snapshot 1`] = `
 <div
-  className="css-wlbfil">
+  className="css-wlbfil"
+>
   <h1>
     Privacy Policy
   </h1>
@@ -60,7 +63,7 @@ exports[`<PrivacyPolicy /> matches render snapshot 1`] = `
     We take precautions to protect your information. When you submit sensitive information via the website or app, your information is protected both online and offline.
   </p>
   <p>
-    Wherever we collect sensitive information (such as credit card data), that information is encrypted and transmitted to us in a secure way. You can verify this by looking for a closed lock icon at the bottom of your web browser, or looking for \"https\" at the beginning of the address of the web page.
+    Wherever we collect sensitive information (such as credit card data), that information is encrypted and transmitted to us in a secure way. You can verify this by looking for a closed lock icon at the bottom of your web browser, or looking for "https" at the beginning of the address of the web page.
   </p>
   <p>
     While we use encryption to protect sensitive information transmitted online, we also protect your information offline. Only employees who need the information to perform a specific job (for example, billing or customer service) are granted access to personally identifiable information. The computers/servers in which we store personally identifiable information are kept in a secure environment.
@@ -86,20 +89,20 @@ exports[`<PrivacyPolicy /> matches render snapshot 1`] = `
 exports[`<PrivacyPolicy /> matches style / css snapshot 1`] = `
 "[
   {
-    \"rules\": {
-      \"background\": [
-        \"#048ec5\",
-        \"-moz-linear-gradient(-45deg, #048ec5 0%, #2ecc71 100%) fixed\",
-        \"-webkit-linear-gradient(-45deg, #048ec5 0%,#2ecc71 100%) fixed\",
-        \"-webkit-linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed\",
-        \"-moz-linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed\",
-        \"linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed\"
+    \\"rules\\": {
+      \\"background\\": [
+        \\"#048ec5\\",
+        \\"-moz-linear-gradient(-45deg, #048ec5 0%, #2ecc71 100%) fixed\\",
+        \\"-webkit-linear-gradient(-45deg, #048ec5 0%,#2ecc71 100%) fixed\\",
+        \\"-webkit-linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed\\",
+        \\"-moz-linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed\\",
+        \\"linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed\\"
       ],
-      \"filter\": \"progid:DXImageTransform.Microsoft.gradient( startColorstr=\'#048ec5\', endColorstr=\'#2ecc71\',GradientType=1 )\",
-      \"color\": \"white\",
-      \"padding\": \"30px\"
+      \\"filter\\": \\"progid:DXImageTransform.Microsoft.gradient( startColorstr='#048ec5', endColorstr='#2ecc71',GradientType=1 )\\",
+      \\"color\\": \\"white\\",
+      \\"padding\\": \\"30px\\"
     },
-    \"className\": \"css-wlbfil\"
+    \\"className\\": \\"css-wlbfil\\"
   }
 ]"
 `;

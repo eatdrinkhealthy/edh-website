@@ -1,6 +1,6 @@
-import { configure } from "@kadira/storybook";
+import { configure } from "@storybook/react";
 
-import "!style!css!less!../client/main.less";
+import "!style-loader!css-loader!less-loader!../client/main.less";
 
 const req = require.context("../imports/ui", true, /__stories__\/.*.stories.jsx?/);
 

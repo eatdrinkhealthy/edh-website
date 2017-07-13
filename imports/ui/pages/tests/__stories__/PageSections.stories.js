@@ -3,7 +3,7 @@
 import React from "react";
 import {
   storiesOf,
-} from "@kadira/storybook";
+} from "@storybook/react";
 import CompanyName from "../../../components/CompanyName";
 import Pitch from "../../../components/Pitch";
 import ComingSoon from "../../../components/ComingSoon";

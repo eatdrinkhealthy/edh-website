@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "start": "meteor run",
-    "lint": "eslint . --ext .js,.jsx --ignore-pattern 'packages/**'",
+    "lint": "eslint . --ext .js,.jsx",
     "pretest": "yarn run lint",
     "test": "yarn run unit-test",
     "unit-test": "jest -c .jest-config.json",

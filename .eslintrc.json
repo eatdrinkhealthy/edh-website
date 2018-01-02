@@ -72,6 +72,12 @@
         ]
       }
     ],
-    "import/extensions": "ignorePackages"
+    "import/extensions": "ignorePackages",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ]
   }
 }

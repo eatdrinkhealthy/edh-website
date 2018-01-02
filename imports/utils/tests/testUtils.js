@@ -1,7 +1,5 @@
 /* eslint-env jest */
 /* eslint-disable func-names, prefer-arrow-callback, no-unused-expressions */
-/* eslint-disable import/no-extraneous-dependencies */
-
 import cheerio from "cheerio";
 import _ from "lodash";
 import { mount } from "enzyme";

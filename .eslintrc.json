@@ -67,7 +67,8 @@
       "error",
       {
         "ignore": [
-          "^meteor/"
+          "^meteor/",
+          "^@storybook/"
         ]
       }
     ]

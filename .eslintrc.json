@@ -71,6 +71,7 @@
           "^@storybook/"
         ]
       }
-    ]
+    ],
+    "import/extensions": "ignorePackages"
   }
 }

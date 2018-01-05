@@ -55,7 +55,6 @@
       }
     ],
     "react/no-danger": "warn",
-    "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": "off",
     "meteor/eventmap-params": [
       "error",

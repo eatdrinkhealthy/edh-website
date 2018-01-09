@@ -3,10 +3,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import Pitch from "../Pitch";
-import {
-  formattedJSON,
-  getAllComponentStyle,
-} from "../../../utils/tests/testUtils";
+import { formattedJSON, getAllComponentStyle } from "../../../utils/tests/testUtils";
 import * as styles from "../../../ui/styles";
 
 describe("<Pitch />", function () {

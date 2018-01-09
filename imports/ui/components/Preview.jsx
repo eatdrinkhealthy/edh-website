@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  appLinksHeaderStyle,
-  appLinksButtonsStyle,
-} from "../styles";
+import { appLinksHeaderStyle, appLinksButtonsStyle } from "../styles";
 import LinkButton from "./LinkButton";
 
 const Preview = () => (

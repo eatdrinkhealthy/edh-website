@@ -29,6 +29,13 @@
       "meteor/mongo"
     ]
   },
+  "globals": {
+    "window": true,
+    "document": true,
+    "browser": true,
+    "navigator": true,
+    "alert": true
+  },
   "rules": {
     "semi": "error",
     "no-console": "warn",

@@ -2,22 +2,6 @@
 
 exports[`<SplashPage /> matches render snapshot 1`] = `
 <div>
-  <div
-    className="css-nkpr7m"
-  />
-  <div
-    className="css-1dl4n80"
-  >
-    A platform to find, share, and discuss healthy places to shop and eat.
-  </div>
-  <div
-    className="css-cdesk3"
-  >
-    Coming Soon
-  </div>
-  <div
-    className="css-o94tcm"
-  />
   <div>
     <div
       className="css-m58pgh"
@@ -46,57 +30,6 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
 
 exports[`<SplashPage /> matches style / css snapshot 1`] = `
 "[
-  {
-    \\"rules\\": {
-      \\"backgroundImage\\": \\"url('/images/logo.png')\\",
-      \\"backgroundSize\\": \\"100%\\",
-      \\"backgroundRepeat\\": \\"no-repeat\\",
-      \\"width\\": \\"226px\\",
-      \\"height\\": \\"156px\\",
-      \\"display\\": \\"block\\",
-      \\"margin\\": \\"90px auto 0\\"
-    },
-    \\"className\\": \\"css-nkpr7m\\"
-  },
-  {
-    \\"rules\\": {
-      \\"paddingTop\\": \\"30px\\",
-      \\"fontSize\\": \\"15px\\",
-      \\"color\\": \\"white\\",
-      \\"display\\": \\"block\\",
-      \\"width\\": \\"226px\\",
-      \\"margin\\": \\"0 auto\\",
-      \\"paddingBottom\\": \\"30px\\",
-      \\"borderBottom\\": \\"1px solid rgba(255,255,255,0.6)\\"
-    },
-    \\"className\\": \\"css-1dl4n80\\"
-  },
-  {
-    \\"rules\\": {
-      \\"fontFamily\\": \\"Montserrat\\",
-      \\"paddingTop\\": \\"30px\\",
-      \\"fontSize\\": \\"20px\\",
-      \\"fontWeight\\": \\"bold\\",
-      \\"textAlign\\": \\"center\\",
-      \\"color\\": \\"white\\",
-      \\"paddingBottom\\": \\"30px\\",
-      \\"borderBottom\\": \\"1px solid rgba(255,255,255,0.6)\\",
-      \\"display\\": \\"block\\",
-      \\"width\\": \\"226px\\",
-      \\"margin\\": \\"0 auto\\"
-    },
-    \\"className\\": \\"css-cdesk3\\"
-  },
-  {
-    \\"rules\\": {
-      \\"backgroundImage\\": \\"url('/images/ios-icon.png')\\",
-      \\"backgroundSize\\": \\"100%\\",
-      \\"width\\": \\"90px\\",
-      \\"height\\": \\"90px\\",
-      \\"margin\\": \\"30px auto\\"
-    },
-    \\"className\\": \\"css-o94tcm\\"
-  },
   {
     \\"rules\\": {
       \\"marginTop\\": \\"90px\\",

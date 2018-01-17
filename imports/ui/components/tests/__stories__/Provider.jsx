@@ -10,7 +10,7 @@ const store = createStore(rootReducer);
 const Provider = ({ story }) => <ReduxProvider store={store}>{story}</ReduxProvider>;
 
 Provider.propTypes = {
-  story: PropTypes.element.isRequired,
+  story: PropTypes.element, // eslint-disable-line react/require-default-props
 };
 
 export default Provider;

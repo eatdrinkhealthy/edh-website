@@ -65,24 +65,6 @@ export const pitchStyle = {
   className: `${css(pitchRules)}`,
 };
 
-const comingSoonRules = {
-  fontFamily: "Montserrat",
-  paddingTop: "30px",
-  fontSize: "20px",
-  fontWeight: "bold",
-  textAlign: "center",
-  color: "white",
-  paddingBottom: "30px",
-  borderBottom: "1px solid rgba(255,255,255,0.6)",
-  display: "block",
-  width: "226px",
-  margin: "0 auto",
-};
-export const comingSoonStyle = {
-  rules: comingSoonRules,
-  className: `${css(comingSoonRules)}`,
-};
-
 const logoRules = {
   backgroundImage: "url('/images/ios-icon.png')",
   backgroundSize: "100%",

@@ -1,7 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Preview /> matches render snapshot 1`] = `
-<div>
+<div
+  style={
+    Object {
+      "bottom": 0,
+      "position": "absolute",
+    }
+  }
+>
   <div
     className="css-lfdzya"
   >

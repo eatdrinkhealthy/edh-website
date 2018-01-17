@@ -11,14 +11,16 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
     A platform to find, share, and discuss healthy places to shop and eat.
   </div>
   <div
-    className="css-cdesk3"
-  >
-    Coming Soon
-  </div>
-  <div
     className="css-o94tcm"
   />
-  <div>
+  <div
+    style={
+      Object {
+        "bottom": 0,
+        "position": "absolute",
+      }
+    }
+  >
     <div
       className="css-lfdzya"
     >
@@ -65,22 +67,6 @@ exports[`<SplashPage /> matches style / css snapshot 1`] = `
       \\"borderBottom\\": \\"1px solid rgba(255,255,255,0.6)\\"
     },
     \\"className\\": \\"css-1dl4n80\\"
-  },
-  {
-    \\"rules\\": {
-      \\"fontFamily\\": \\"Montserrat\\",
-      \\"paddingTop\\": \\"30px\\",
-      \\"fontSize\\": \\"20px\\",
-      \\"fontWeight\\": \\"bold\\",
-      \\"textAlign\\": \\"center\\",
-      \\"color\\": \\"white\\",
-      \\"paddingBottom\\": \\"30px\\",
-      \\"borderBottom\\": \\"1px solid rgba(255,255,255,0.6)\\",
-      \\"display\\": \\"block\\",
-      \\"width\\": \\"226px\\",
-      \\"margin\\": \\"0 auto\\"
-    },
-    \\"className\\": \\"css-cdesk3\\"
   },
   {
     \\"rules\\": {

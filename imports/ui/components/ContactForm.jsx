@@ -3,6 +3,8 @@ import { Field, reduxForm } from "redux-form";
 
 /* eslint-disable */
 
+const errorMessage = () => <div style={{ color: "red" }}>{children}</div>;
+
 const ContactFormComponent = () => (
   <div
     style={{
@@ -17,7 +19,7 @@ const ContactFormComponent = () => (
       <div>
         <label htmlFor="contactName">Name </label>
         <Field name="contactName" component="input" type="text" autoFocus />
-        <div>validation error.</div>
+        <errorMessage>validation error.</errorMessage>
       </div>
 
       <div>

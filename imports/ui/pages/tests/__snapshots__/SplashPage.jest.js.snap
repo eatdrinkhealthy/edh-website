@@ -20,11 +20,6 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
   />
   <div>
     <div
-      className="css-m58pgh"
-    >
-      Early Version Preview...
-    </div>
-    <div
       className="css-lfdzya"
     >
       <a
@@ -96,15 +91,6 @@ exports[`<SplashPage /> matches style / css snapshot 1`] = `
       \\"margin\\": \\"30px auto\\"
     },
     \\"className\\": \\"css-o94tcm\\"
-  },
-  {
-    \\"rules\\": {
-      \\"marginTop\\": \\"90px\\",
-      \\"marginLeft\\": \\"40px\\",
-      \\"fontSize\\": \\"16px\\",
-      \\"color\\": \\"white\\"
-    },
-    \\"className\\": \\"css-m58pgh\\"
   },
   {
     \\"rules\\": {

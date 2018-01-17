@@ -22,7 +22,8 @@ const gradientBackgroundRules = {
     "linear-gradient(135deg, #048ec5 0%,#2ecc71 100%) fixed",
   ],
   /* IE6-9 fallback on horizontal gradient */
-  filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#048ec5', endColorstr='#2ecc71',GradientType=1 )",
+  filter:
+    "progid:DXImageTransform.Microsoft.gradient( startColorstr='#048ec5', endColorstr='#2ecc71',GradientType=1 )",
 };
 
 const defaultPageRules = {
@@ -92,17 +93,6 @@ const logoRules = {
 export const logoStyle = {
   rules: logoRules,
   className: `${css(logoRules)}`,
-};
-
-const appLinksHeaderRules = {
-  marginTop: "90px",
-  marginLeft: "40px",
-  fontSize: "16px",
-  color: "white",
-};
-export const appLinksHeaderStyle = {
-  rules: appLinksHeaderRules,
-  className: `${css(appLinksHeaderRules)}`,
 };
 
 const appLinksButtonsRules = {

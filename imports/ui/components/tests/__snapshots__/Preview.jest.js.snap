@@ -3,11 +3,6 @@
 exports[`<Preview /> matches render snapshot 1`] = `
 <div>
   <div
-    className="css-m58pgh"
-  >
-    Early Version Preview...
-  </div>
-  <div
     className="css-lfdzya"
   >
     <a
@@ -28,15 +23,6 @@ exports[`<Preview /> matches render snapshot 1`] = `
 
 exports[`<Preview /> matches style / css snapshot 1`] = `
 "[
-  {
-    \\"rules\\": {
-      \\"marginTop\\": \\"90px\\",
-      \\"marginLeft\\": \\"40px\\",
-      \\"fontSize\\": \\"16px\\",
-      \\"color\\": \\"white\\"
-    },
-    \\"className\\": \\"css-m58pgh\\"
-  },
   {
     \\"rules\\": {
       \\"marginTop\\": \\"14px\\",

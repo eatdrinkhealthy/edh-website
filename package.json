@@ -38,8 +38,6 @@
     "eslint-plugin-meteor": "^4.1.4",
     "eslint-plugin-react": "^7.4.0",
     "jest": "^22.0.4",
-    "less": "^2.7.3",
-    "less-loader": "^4.0.5",
     "lodash": "^4.17.4",
     "react-test-renderer": "^16.2.0",
     "style-loader": "^0.19.1"

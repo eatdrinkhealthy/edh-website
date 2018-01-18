@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> should match render snapshot 1`] = `
+<footer
+  className="app-footer"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="column"
+    >
+      <img
+        alt="Company Logo"
+        src="images/carrot_icon.png"
+      />
+      <span
+        className="app-footer__copyright"
+      >
+        <span>
+          Copyright 2018 Eat. Drink. Healthy.
+        </span>
+        <span>
+          All rights reserved.
+        </span>
+      </span>
+    </div>
+  </div>
+</footer>
+`;

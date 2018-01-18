@@ -167,6 +167,32 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
       </a>
     </div>
   </div>
+  <footer
+    className="app-footer"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="column"
+      >
+        <img
+          alt="Company Logo"
+          src="images/carrot_icon.png"
+        />
+        <span
+          className="app-footer__copyright"
+        >
+          <span>
+            Copyright 2018 Eat. Drink. Healthy.
+          </span>
+          <span>
+            All rights reserved.
+          </span>
+        </span>
+      </div>
+    </div>
+  </footer>
 </div>
 `;
 
@@ -322,6 +348,14 @@ exports[`<SplashPage /> matches style / css snapshot 1`] = `
       \\"fontSize\\": \\"12px\\"
     },
     \\"className\\": \\"css-1trporh\\"
+  },
+  {
+    \\"className\\": \\"app-footer\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"app-footer__copyright\\",
+    \\"status\\": \\"not found\\"
   }
 ]"
 `;

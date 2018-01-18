@@ -79,7 +79,7 @@ exports[`<PrivacyPolicy /> matches render snapshot 1`] = `
     Our Privacy Policy may change from time to time and all updates will be posted on this page.
   </p>
   <p>
-    If you feel that we are not abiding by this privacy policy, you should contact us immediately via the contact form on our support page.
+    If you feel that we are not abiding by this privacy policy, you should contact us immediately via the contact form.
   </p>
 </div>
 `;

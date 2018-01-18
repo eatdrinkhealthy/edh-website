@@ -89,7 +89,7 @@ const PrivacyPolicy = () => (
 
     <p>
       If you feel that we are not abiding by this privacy policy, you should contact us
-      immediately via the contact form on our support page.
+      immediately via the contact form.
     </p>
   </div>
 );

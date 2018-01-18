@@ -2,6 +2,142 @@
 
 exports[`<SplashPage /> matches render snapshot 1`] = `
 <div>
+  <header
+    className="app-header"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="column"
+      >
+        <div
+          className="app-header__top"
+        >
+          <a
+            href="/"
+          >
+            <img
+              alt="Company Logo"
+              src="images/logo.png"
+            />
+          </a>
+          <nav
+            className="app-header-nav"
+          >
+            <ul
+              className="menu align-center"
+            >
+              <li
+                className="is-active"
+              >
+                <a
+                  href="/"
+                >
+                  HOME
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                >
+                  CONTACT
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  PRIVACY
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div
+            className="app-header-social text-center medium-text-right"
+          >
+            <a
+              href="#"
+            >
+              <span
+                className="fa-stack fa-lg"
+              >
+                <i
+                  className="fa fa-circle fa-stack-2x"
+                />
+                <i
+                  className="fa fa-envelope fa-stack-1x fa-inverse"
+                />
+              </span>
+            </a>
+            <a
+              href="#"
+            >
+              <span
+                className="fa-stack fa-lg"
+              >
+                <i
+                  className="fa fa-circle fa-stack-2x"
+                />
+                <i
+                  className="fa fa-linkedin fa-stack-1x fa-inverse"
+                />
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section
+      className="app-header__banner"
+    >
+      <div
+        className="app-header__banner-content-wrapper"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="column medium-8 large-7"
+          >
+            <div
+              className="app-header__banner-headline"
+            >
+              A platform to find, share, and discuss healthy places to shop and eat.
+            </div>
+            <div
+              className="app-header__banner-buttons"
+            >
+              <a
+                className="button button--app-store"
+                href="#"
+              >
+                <i
+                  className="fa fa-apple"
+                />
+                <span>
+                  Download on
+                  <br />
+                  the 
+                  <strong>
+                    App Store
+                  </strong>
+                </span>
+              </a>
+              <a
+                className="button button--wep-app"
+                href="#"
+              >
+                <span>
+                  Web App
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
   <div>
     <div
       className="css-1qv65uo"
@@ -30,6 +166,126 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
 
 exports[`<SplashPage /> matches style / css snapshot 1`] = `
 "[
+  {
+    \\"className\\": \\"app-header\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"row\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"column\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"app-header__top\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"app-header-nav\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"menu\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"align-center\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"is-active\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"app-header-social\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"text-center\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"medium-text-right\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"fa-stack\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"fa-lg\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"fa\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"fa-circle\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"fa-stack-2x\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"fa-envelope\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"fa-stack-1x\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"fa-inverse\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"fa-linkedin\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"app-header__banner\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"app-header__banner-content-wrapper\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"medium-8\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"large-7\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"app-header__banner-headline\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"app-header__banner-buttons\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"button\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"button--app-store\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"fa-apple\\",
+    \\"status\\": \\"not found\\"
+  },
+  {
+    \\"className\\": \\"button--wep-app\\",
+    \\"status\\": \\"not found\\"
+  },
   {
     \\"rules\\": {
       \\"marginTop\\": \\"90px\\",

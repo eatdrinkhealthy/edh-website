@@ -45,7 +45,7 @@ exports[`<Header /> should match render snapshot 1`] = `
             </li>
             <li>
               <a
-                href="#"
+                href="/privacy-policy"
               >
                 PRIVACY
               </a>
@@ -56,7 +56,7 @@ exports[`<Header /> should match render snapshot 1`] = `
           className="app-header-social text-center medium-text-right"
         >
           <a
-            href="#"
+            href="mailto:info@eatdrinkhealthy.co"
           >
             <span
               className="fa-stack fa-lg"
@@ -70,7 +70,9 @@ exports[`<Header /> should match render snapshot 1`] = `
             </span>
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/company/16173480/"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             <span
               className="fa-stack fa-lg"
@@ -109,7 +111,9 @@ exports[`<Header /> should match render snapshot 1`] = `
           >
             <a
               className="button button--app-store"
-              href="#"
+              href="https://app.eatdrinkhealthy.co/"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               <i
                 className="fa fa-apple"
@@ -125,7 +129,9 @@ exports[`<Header /> should match render snapshot 1`] = `
             </a>
             <a
               className="button button--wep-app"
-              href="#"
+              href="https://itunes.apple.com/app/id1116167404"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               <span>
                 Web App

@@ -48,6 +48,7 @@
         "allow": ["_id"]
       }
     ],
+    "function-paren-newline": ["error", "consistent"],
     "react/no-danger": "warn",
     "meteor/eventmap-params": [
       "error",

@@ -93,15 +93,6 @@
   }
 }
 
-.active-link {
-  color: get_color(primary);
-  background-color: transparent;
-
-  &:hover {
-    color: get_color(primary);
-  }
-}
-
 .app-header-nav {
   flex: 1;
 

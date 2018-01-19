@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Header /> should match render snapshot 1`] = `
-<header
-  className="app-header"
->
+<div>
   <div
     className="row"
   >
@@ -82,58 +80,62 @@ exports[`<Header /> should match render snapshot 1`] = `
       </div>
     </div>
   </div>
-  <section
-    className="app-header__banner"
+  <header
+    className="app-header"
   >
-    <div
-      className="app-header__banner-content-wrapper"
+    <section
+      className="app-header__banner"
     >
       <div
-        className="row"
+        className="app-header__banner-content-wrapper"
       >
         <div
-          className="column medium-8 large-7"
+          className="row"
         >
           <div
-            className="app-header__banner-headline"
+            className="column medium-8 large-7"
           >
-            A platform to find, share, and discuss healthy places to shop and eat.
-          </div>
-          <div
-            className="app-header__banner-buttons"
-          >
-            <a
-              className="button button--app-store"
-              href="https://app.eatdrinkhealthy.co/"
-              rel="noopener noreferrer"
-              target="_blank"
+            <div
+              className="app-header__banner-headline"
             >
-              <i
-                className="fa fa-apple"
-              />
-              <span>
-                Download on
-                <br />
-                the 
-                <strong>
-                  App Store
-                </strong>
-              </span>
-            </a>
-            <a
-              className="button button--wep-app"
-              href="https://itunes.apple.com/app/id1116167404"
-              rel="noopener noreferrer"
-              target="_blank"
+              A platform to find, share, and discuss healthy places to shop and eat.
+            </div>
+            <div
+              className="app-header__banner-buttons"
             >
-              <span>
-                Web App
-              </span>
-            </a>
+              <a
+                className="button button--app-store"
+                href="https://app.eatdrinkhealthy.co/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i
+                  className="fa fa-apple"
+                />
+                <span>
+                  Download on
+                  <br />
+                  the 
+                  <strong>
+                    App Store
+                  </strong>
+                </span>
+              </a>
+              <a
+                className="button button--wep-app"
+                href="https://itunes.apple.com/app/id1116167404"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span>
+                  Web App
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-</header>
+    </section>
+  </header>
+</div>
 `;

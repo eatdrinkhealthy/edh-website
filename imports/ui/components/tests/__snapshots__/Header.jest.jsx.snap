@@ -38,13 +38,6 @@ exports[`<Header /> should match render snapshot 1`] = `
             </li>
             <li>
               <a
-                href="#contact"
-              >
-                CONTACT
-              </a>
-            </li>
-            <li>
-              <a
                 href="/privacy-policy"
               >
                 PRIVACY

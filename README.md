@@ -24,13 +24,6 @@ a simple splash page with links to the web and mobile app, for now.  (this site 
             - although source files in the imports directory are not eagerly loaded for the build, by placing them in a tests/ directory, a running server in dev mode will not restart when changes are made to the file
 * Configuration
     - storybook files are placed in `/__stories__/` directories, and follow a naming convention of `*.stories.jsx?`
-### Styling
-* Currently, using a convention where DOM style properties and glamor generated className are stored in a javascript object, as a convenience for css snapshot testing & enzyme .hasClass
-    - NOTE: can pass glamor generated css object or glamor generated className (a string) to component className prop
-    - may punt on this convention if ill side effects discovered or code becomes too verbose
-    - __TODO:__ consider / investigate alternate manner for capturing css values
-        + window.getComputedStyle?  use a different renderer? dig through glamor test code?
-* Use of gradientBackgroundRules in styles.js may be unnecessary (since it is set for html in main.less as well)
 
 ### Testing
 * when testing with a snapshot, __be sure to THOROUGHLY examine the first created snapshot file__

@@ -18,8 +18,10 @@ describe("<SplashPage />", function () {
     expect(formattedJSON(allStyle)).toMatchSnapshot();
   });
 
-  it("contains sections ... preview ", function () {
+  it("contains sections header, main, footer", function () {
     const wrapper = shallow(<SplashPage />);
-    expect(wrapper.find("Preview").length).toEqual(1);
+    expect(wrapper.find("Header").length).toEqual(1);
+    expect(wrapper.find("Main").length).toEqual(1);
+    expect(wrapper.find("Footer").length).toEqual(1);
   });
 });

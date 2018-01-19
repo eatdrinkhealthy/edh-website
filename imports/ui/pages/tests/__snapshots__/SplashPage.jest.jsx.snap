@@ -144,29 +144,31 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
       </div>
     </section>
   </header>
-  <div>
-    <div
-      className="css-1qv65uo"
+  <main
+    className="app-main"
+  >
+    <section
+      className="app-main__content"
     >
-      Early Version Preview...
-    </div>
-    <div
-      className="css-lfdzya"
-    >
-      <a
-        className="css-1trporh"
-        href="https://app.eatdrinkhealthy.co/"
+      <div
+        className="row"
       >
-        Web App
-      </a>
-      <a
-        className="css-1trporh"
-        href="https://itunes.apple.com/app/id1116167404"
-      >
-        App Store
-      </a>
-    </div>
-  </div>
+        <div
+          style={
+            Object {
+              "margin": "auto",
+              "width": "50%",
+            }
+          }
+        >
+          <img
+            alt="Mobile Phone Device"
+            src="images/device.png"
+          />
+        </div>
+      </div>
+    </section>
+  </main>
   <footer
     className="app-footer"
   >
@@ -319,35 +321,12 @@ exports[`<SplashPage /> matches style / css snapshot 1`] = `
     \\"status\\": \\"not found\\"
   },
   {
-    \\"rules\\": {
-      \\"marginTop\\": \\"90px\\",
-      \\"marginLeft\\": \\"40px\\",
-      \\"fontSize\\": \\"16px\\",
-      \\"color\\": \\"darkbrown\\"
-    },
-    \\"className\\": \\"css-1qv65uo\\"
+    \\"className\\": \\"app-main\\",
+    \\"status\\": \\"not found\\"
   },
   {
-    \\"rules\\": {
-      \\"marginTop\\": \\"14px\\",
-      \\"marginBottom\\": \\"20px\\",
-      \\"marginLeft\\": \\"40px\\"
-    },
-    \\"className\\": \\"css-lfdzya\\"
-  },
-  {
-    \\"rules\\": {
-      \\"backgroundColor\\": \\"darkslategray\\",
-      \\"border\\": \\"none\\",
-      \\"borderRadius\\": \\"4px\\",
-      \\"color\\": \\"white\\",
-      \\"padding\\": \\"8px 32px 8px 32px\\",
-      \\"marginRight\\": \\"8px\\",
-      \\"textAlign\\": \\"center\\",
-      \\"textDecoration\\": \\"none\\",
-      \\"fontSize\\": \\"12px\\"
-    },
-    \\"className\\": \\"css-1trporh\\"
+    \\"className\\": \\"app-main__content\\",
+    \\"status\\": \\"not found\\"
   },
   {
     \\"className\\": \\"app-footer\\",

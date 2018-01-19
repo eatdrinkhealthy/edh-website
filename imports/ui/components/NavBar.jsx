@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => (
   <div className="row">
@@ -11,15 +11,15 @@ const NavBar = () => (
 
         <nav className="app-header-nav">
           <ul className="menu align-center">
-            <li className="is-active">
-              <Link to="/" activeClassName="active-link">
+            <li>
+              <NavLink to="/" activeStyle={{ color: "#f28020" }} exact>
                 HOME
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/privacy-policy" activeClassName="active-link">
+              <NavLink to="/privacy-policy" activeStyle={{ color: "#f28020" }} exact>
                 PRIVACY
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>

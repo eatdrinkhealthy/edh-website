@@ -14,7 +14,7 @@ const Header = () => (
               </div>
               <div className="app-header__banner-buttons">
                 <a
-                  href="https://app.eatdrinkhealthy.co/"
+                  href="https://itunes.apple.com/app/id1116167404"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="button button--app-store"
@@ -25,7 +25,7 @@ const Header = () => (
                   </span>
                 </a>
                 <a
-                  href="https://itunes.apple.com/app/id1116167404"
+                  href="https://app.eatdrinkhealthy.co/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="button button--wep-app"

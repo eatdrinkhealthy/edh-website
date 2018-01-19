@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Provider } from "react-redux";
-import { store } from "../../state/stores/store";
+import store from "../../state/stores/store";
 import SplashPage from "../pages/SplashPage";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
 

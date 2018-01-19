@@ -115,7 +115,7 @@ exports[`<Header /> should match render snapshot 1`] = `
             >
               <a
                 className="button button--app-store"
-                href="https://app.eatdrinkhealthy.co/"
+                href="https://itunes.apple.com/app/id1116167404"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -133,7 +133,7 @@ exports[`<Header /> should match render snapshot 1`] = `
               </a>
               <a
                 className="button button--wep-app"
-                href="https://itunes.apple.com/app/id1116167404"
+                href="https://app.eatdrinkhealthy.co/"
                 rel="noopener noreferrer"
                 target="_blank"
               >

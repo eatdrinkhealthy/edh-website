@@ -25,18 +25,28 @@ exports[`<Header /> should match render snapshot 1`] = `
           <ul
             className="menu align-center"
           >
-            <li
-              className="is-active"
-            >
+            <li>
               <a
+                aria-current="true"
+                className="active"
                 href="/"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "color": "#f28020",
+                  }
+                }
               >
                 HOME
               </a>
             </li>
             <li>
               <a
+                aria-current={false}
+                className={undefined}
                 href="/privacy-policy"
+                onClick={[Function]}
+                style={undefined}
               >
                 PRIVACY
               </a>

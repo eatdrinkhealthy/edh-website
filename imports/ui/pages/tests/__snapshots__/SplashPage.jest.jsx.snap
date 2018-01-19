@@ -26,18 +26,28 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
             <ul
               className="menu align-center"
             >
-              <li
-                className="is-active"
-              >
+              <li>
                 <a
+                  aria-current="true"
+                  className="active"
                   href="/"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "color": "#f28020",
+                    }
+                  }
                 >
                   HOME
                 </a>
               </li>
               <li>
                 <a
+                  aria-current={false}
+                  className={undefined}
                   href="/privacy-policy"
+                  onClick={[Function]}
+                  style={undefined}
                 >
                   PRIVACY
                 </a>
@@ -191,145 +201,4 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
     </div>
   </footer>
 </div>
-`;
-
-exports[`<SplashPage /> matches style / css snapshot 1`] = `
-"[
-  {
-    \\"className\\": \\"row\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"column\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"app-header__top\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"app-header-nav\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"menu\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"align-center\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"is-active\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"app-header-social\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"text-center\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"medium-text-right\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"fa-stack\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"fa-lg\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"fa\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"fa-circle\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"fa-stack-2x\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"fa-envelope\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"fa-stack-1x\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"fa-inverse\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"fa-linkedin\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"app-header\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"app-header__banner\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"app-header__banner-content-wrapper\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"medium-8\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"large-7\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"app-header__banner-headline\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"app-header__banner-buttons\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"button\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"button--app-store\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"fa-apple\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"button--wep-app\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"app-main\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"app-main__content\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"app-footer\\",
-    \\"status\\": \\"not found\\"
-  },
-  {
-    \\"className\\": \\"app-footer__copyright\\",
-    \\"status\\": \\"not found\\"
-  }
-]"
 `;

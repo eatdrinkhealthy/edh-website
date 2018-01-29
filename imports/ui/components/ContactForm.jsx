@@ -1,13 +1,19 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Field, reduxForm } from "redux-form";
-
-/* eslint-disable */
 
 const ValidationError = ({ children, visible }) => {
   const classes = `form-error ${visible ? "is-visible" : ""}`;
 
   return <span className={classes}>{children}</span>;
 };
+
+ValidationError.propTypes = {
+  children: PropTypes.string.isRequired,
+  visible: PropTypes.bool, // eslint-disable-line react/require-default-props
+};
+
+/* eslint-disable jsx-a11y/label-has-for */
 
 const ContactFormComponent = () => (
   <div>

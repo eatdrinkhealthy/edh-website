@@ -31,8 +31,8 @@ const ContactFormComponent = () => (
         <ValidationError>validation error.</ValidationError>
       </div>
 
-      <button id="contactSubmit" type="submit">
-        Submit
+      <button id="contactSubmit" type="submit" className="button button--submit">
+        Send
       </button>
     </form>
   </div>

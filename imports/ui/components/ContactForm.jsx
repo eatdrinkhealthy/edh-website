@@ -3,9 +3,11 @@ import { Field, reduxForm } from "redux-form";
 
 /* eslint-disable */
 
-const ValidationError = ({ children }) => (
-  <span className="form-error is-visible">{children}</span>
-);
+const ValidationError = ({ children, visible }) => {
+  const classes = `form-error ${visible ? "is-visible" : ""}`;
+
+  return <span className={classes}>{children}</span>;
+};
 
 const ContactFormComponent = () => (
   <div>
@@ -14,17 +16,19 @@ const ContactFormComponent = () => (
       <div>
         <label htmlFor="contactName">Name </label>
         <Field name="contactName" component="input" type="text" autoFocus />
-        <ValidationError>validation error.</ValidationError>
+        <ValidationError visible>validation error.</ValidationError>
       </div>
 
       <div>
         <label htmlFor="contactEmail">Email </label>
         <Field name="contactEmail" component="input" type="email" />
+        <ValidationError>validation error.</ValidationError>
       </div>
 
       <div>
         <label htmlFor="contactMessage">Message </label>
         <Field name="contactMessage" component="textarea" rows={10} cols={50} />
+        <ValidationError>validation error.</ValidationError>
       </div>
 
       <button id="contactSubmit" type="submit">

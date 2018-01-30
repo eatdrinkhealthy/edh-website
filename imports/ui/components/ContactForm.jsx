@@ -9,8 +9,13 @@ const ValidationError = ({ children, visible }) => {
 };
 
 ValidationError.propTypes = {
-  children: PropTypes.string.isRequired,
-  visible: PropTypes.bool, // eslint-disable-line react/require-default-props
+  children: PropTypes.node,
+  visible: PropTypes.bool,
+};
+
+ValidationError.defaultProps = {
+  children: "",
+  visible: false,
 };
 
 /* eslint-disable jsx-a11y/label-has-for */

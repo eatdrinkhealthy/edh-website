@@ -159,17 +159,100 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
         className="row"
       >
         <div
-          style={
-            Object {
-              "margin": "auto",
-              "width": "50%",
-            }
-          }
+          className="column small-12 medium-7"
         >
           <img
             alt="Mobile Phone Device"
             src="images/device.png"
           />
+        </div>
+        <div
+          className="column small-12 medium-5"
+        >
+          <div>
+            <h2>
+              Contact Us
+            </h2>
+            <form
+              onSubmit={[Function]}
+            >
+              <div>
+                <label
+                  htmlFor="contactName"
+                >
+                  Name 
+                </label>
+                <input
+                  autoFocus={true}
+                  name="contactName"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onDragStart={[Function]}
+                  onDrop={[Function]}
+                  onFocus={[Function]}
+                  type="text"
+                  value=""
+                />
+                <span
+                  className="form-error is-visible"
+                >
+                  validation error.
+                </span>
+              </div>
+              <div>
+                <label
+                  htmlFor="contactEmail"
+                >
+                  Email 
+                </label>
+                <input
+                  name="contactEmail"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onDragStart={[Function]}
+                  onDrop={[Function]}
+                  onFocus={[Function]}
+                  type="email"
+                  value=""
+                />
+                <span
+                  className="form-error "
+                >
+                  validation error.
+                </span>
+              </div>
+              <div>
+                <label
+                  htmlFor="contactMessage"
+                >
+                  Message 
+                </label>
+                <textarea
+                  cols={50}
+                  name="contactMessage"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onDragStart={[Function]}
+                  onDrop={[Function]}
+                  onFocus={[Function]}
+                  rows={10}
+                  value=""
+                />
+                <span
+                  className="form-error "
+                >
+                  validation error.
+                </span>
+              </div>
+              <button
+                className="button button--submit"
+                id="contactSubmit"
+                type="submit"
+              >
+                Send
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>

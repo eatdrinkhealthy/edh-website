@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Field, reduxForm } from "redux-form";
+import AlertMessage from "./AlertMessage";
 
 const ValidationError = ({ children, visible }) => {
   const classes = `form-error ${visible ? "is-visible" : ""}`;
@@ -23,7 +24,7 @@ ValidationError.defaultProps = {
 const ContactFormComponent = () => (
   <div>
     <h2>Contact Us</h2>
-    <form onSubmit={() => alert("submitted!")}>
+    <form onSubmit={() => AlertMessage.success("submitted!")}>
       <div>
         <label htmlFor="contactName">Name </label>
         <Field name="contactName" component="input" type="text" autoFocus />

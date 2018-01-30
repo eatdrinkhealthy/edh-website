@@ -1,8 +1,9 @@
 import { Meteor } from "meteor/meteor";
 import { render } from "react-dom";
-import App from "../imports/ui/containers/App";
+// include any package css files, so they will be bundled
+import "react-s-alert/dist/s-alert-default.css";
 
-/* global document */
+import App from "../imports/ui/containers/App";
 
 Meteor.startup(() => {
   render(App, document.getElementById("render-target"));

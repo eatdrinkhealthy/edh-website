@@ -1,5 +1,5 @@
 import React from "react";
-import ContactForm from "./ContactForm";
+import ContactContainer from "../containers/ContactContainer";
 
 const Main = () => (
   <main className="app-main">
@@ -9,7 +9,7 @@ const Main = () => (
           <img src="images/device.png" alt="Mobile Phone Device" />
         </div>
         <div className="column small-12 medium-5">
-          <ContactForm />
+          <ContactContainer />
         </div>
       </div>
     </section>

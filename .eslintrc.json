@@ -27,6 +27,7 @@
   },
   "rules": {
     "semi": "error",
+    "arrow-parens": ["error", "as-needed"],
     "no-console": "warn",
     "no-multi-spaces": [
       "warn",

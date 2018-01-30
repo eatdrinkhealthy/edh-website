@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Field, reduxForm } from "redux-form";
-import AlertMessage from "./AlertMessage";
 
 const ValidationError = ({ children, visible }) => {
   const classes = `form-error ${visible ? "is-visible" : ""}`;
@@ -21,34 +20,42 @@ ValidationError.defaultProps = {
 
 /* eslint-disable jsx-a11y/label-has-for */
 
-const ContactFormComponent = () => (
-  <div>
-    <h2>Contact Us</h2>
-    <form onSubmit={() => AlertMessage.success("submitted!")}>
-      <div>
-        <label htmlFor="contactName">Name </label>
-        <Field name="contactName" component="input" type="text" autoFocus />
-        <ValidationError visible>validation error.</ValidationError>
-      </div>
+const ContactFormComponent = props => {
+  const { handleSubmit } = props;
 
-      <div>
-        <label htmlFor="contactEmail">Email </label>
-        <Field name="contactEmail" component="input" type="email" />
-        <ValidationError>validation error.</ValidationError>
-      </div>
+  return (
+    <div>
+      <h2>Contact Us</h2>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="contactName">Name </label>
+          <Field name="contactName" component="input" type="text" autoFocus />
+          <ValidationError visible>validation error.</ValidationError>
+        </div>
 
-      <div>
-        <label htmlFor="contactMessage">Message </label>
-        <Field name="contactMessage" component="textarea" rows={10} cols={50} />
-        <ValidationError>validation error.</ValidationError>
-      </div>
+        <div>
+          <label htmlFor="contactEmail">Email </label>
+          <Field name="contactEmail" component="input" type="email" />
+          <ValidationError>validation error.</ValidationError>
+        </div>
 
-      <button id="contactSubmit" type="submit" className="button button--submit">
-        Send
-      </button>
-    </form>
-  </div>
-);
+        <div>
+          <label htmlFor="contactMessage">Message </label>
+          <Field name="contactMessage" component="textarea" rows={10} cols={50} />
+          <ValidationError>validation error.</ValidationError>
+        </div>
+
+        <button id="contactSubmit" type="submit" className="button button--submit">
+          Send
+        </button>
+      </form>
+    </div>
+  );
+};
+
+ContactFormComponent.propTypes = {
+  handleSubmit: PropTypes.func.isRequired,
+};
 
 const ContactForm = reduxForm({ form: "contactForm" })(ContactFormComponent);
 

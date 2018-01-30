@@ -1,3 +1,4 @@
+import "react-s-alert/dist/s-alert-default.css";
 import Alert from "react-s-alert";
 import PropTypes from "prop-types";
 
@@ -16,8 +17,8 @@ AlertMessage.propTypes = {
 
 // customizing default props (slightly different than Alert)
 AlertMessage.defaultProps = {
-  position: "top-left",
-  offset: 70,
+  position: "top",
+  offset: 0,
   stack: { limit: 5 },
 };
 

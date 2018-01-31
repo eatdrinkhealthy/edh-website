@@ -29,6 +29,8 @@
   "rules": {
     "semi": "error",
     "arrow-parens": ["error", "as-needed"],
+    "object-curly-newline": ["error", { "consistent": true }],
+    "no-confusing-arrow": "off",
     "no-console": "warn",
     "no-multi-spaces": [
       "warn",

@@ -218,17 +218,17 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
                 <label
                   htmlFor="contactMessage"
                 >
-                  Message 
+                  Message
                 </label>
                 <textarea
-                  cols={50}
+                  cols="10"
                   name="contactMessage"
                   onBlur={[Function]}
                   onChange={[Function]}
                   onDragStart={[Function]}
                   onDrop={[Function]}
                   onFocus={[Function]}
-                  rows={10}
+                  rows="50"
                   value=""
                 />
               </div>

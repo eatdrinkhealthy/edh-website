@@ -9,7 +9,6 @@ const emailFormat = value =>
     : undefined;
 
 /* eslint-disable jsx-a11y/label-has-for, jsx-a11y/no-autofocus */
-
 const renderInput = ({ input, label, type, autoFocus, meta: { touched, error } }) => (
   <div>
     <label htmlFor={input.name}>{label}</label>
@@ -33,6 +32,26 @@ renderInput.propTypes = {
 };
 
 renderInput.defaultProps = { autoFocus: false };
+
+const renderTextarea = ({ input, label, meta: { touched, error } }) => (
+  <div>
+    <label htmlFor={input.name}>{label}</label>
+    <textarea {...input} cols="10" rows="50" />
+    {touched && error && <span className="form-error is-visible">{error}</span>}
+  </div>
+);
+
+renderTextarea.propTypes = {
+  input: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+  }).isRequired, // eslint-disable-line react/forbid-prop-types
+  label: PropTypes.string.isRequired,
+  meta: PropTypes.shape({
+    touched: PropTypes.bool.isRequired,
+    error: PropTypes.stringisRequired,
+  }).isRequired,
+};
+/* eslint-enable jsx-a11y/label-has-for, jsx-a11y/no-autofocus */
 
 const ContactFormComponent = props => {
   const { handleSubmit } = props;
@@ -58,10 +77,12 @@ const ContactFormComponent = props => {
           validate={[required, emailFormat]}
         />
 
-        <div>
-          <label htmlFor="contactMessage">Message </label>
-          <Field name="contactMessage" component="textarea" rows={10} cols={50} />
-        </div>
+        <Field
+          name="contactMessage"
+          label="Message"
+          component={renderTextarea}
+          validate={[required]}
+        />
 
         <button id="contactSubmit" type="submit" className="button button--submit">
           Send

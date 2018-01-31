@@ -3,10 +3,20 @@ import PropTypes from "prop-types";
 import { Field, reduxForm } from "redux-form";
 
 const required = value => (value ? undefined : "Required field.");
+
 const emailFormat = value =>
   value && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)
     ? "Invalid email address."
     : undefined;
+
+const minLength2 = value =>
+  value && value.length < 2 ? "Must have a least 2 characters." : undefined;
+
+const maxLength40 = value =>
+  value && value.length > 40 ? "Must not have more than 40 characters." : undefined;
+
+const maxLength500 = value =>
+  value && value.length > 500 ? "Must not have more than 500 characters." : undefined;
 
 /* eslint-disable jsx-a11y/label-has-for, jsx-a11y/no-autofocus */
 const renderInput = ({ input, label, type, autoFocus, meta: { touched, error } }) => (
@@ -65,7 +75,7 @@ const ContactFormComponent = props => {
           label="Name"
           component={renderInput}
           type="text"
-          validate={required}
+          validate={[required, minLength2, maxLength40]}
           autoFocus
         />
 
@@ -81,7 +91,7 @@ const ContactFormComponent = props => {
           name="contactMessage"
           label="Message"
           component={renderTextarea}
-          validate={[required]}
+          validate={[required, minLength2, maxLength500]}
         />
 
         <button id="contactSubmit" type="submit" className="button button--submit">

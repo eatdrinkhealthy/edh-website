@@ -180,10 +180,11 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
                 <label
                   htmlFor="contactName"
                 >
-                  Name 
+                  Name
                 </label>
                 <input
                   autoFocus={true}
+                  component="input"
                   name="contactName"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -193,19 +194,16 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
                   type="text"
                   value=""
                 />
-                <span
-                  className="form-error is-visible"
-                >
-                  validation error.
-                </span>
               </div>
               <div>
                 <label
                   htmlFor="contactEmail"
                 >
-                  Email 
+                  Email
                 </label>
                 <input
+                  autoFocus={false}
+                  component="input"
                   name="contactEmail"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -215,11 +213,6 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
                   type="email"
                   value=""
                 />
-                <span
-                  className="form-error "
-                >
-                  validation error.
-                </span>
               </div>
               <div>
                 <label
@@ -238,11 +231,6 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
                   rows={10}
                   value=""
                 />
-                <span
-                  className="form-error "
-                >
-                  validation error.
-                </span>
               </div>
               <button
                 className="button button--submit"

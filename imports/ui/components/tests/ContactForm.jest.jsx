@@ -182,22 +182,4 @@ describe("<ContactForm />", () => {
     // NOTE: document.querySelector called in onSubmitSuccess works in browser but not in jest
     // expect(usernameNode.get(0)).toEqual(document.activeElement);
   });
-
-  it("should set focus to Name input on render", () => {
-    const props = {
-      onSubmit: jest.fn(),
-    };
-
-    mountFormWithInputs(
-      <ContactForm {...props} />,
-      {
-        contactName: "user12",
-        contactEmail: "user12@test.com",
-        contactMessage: "a message to send.",
-      },
-      testStore,
-    );
-
-    expect(document.activeElement.id).toBe("contactName");
-  });
 });

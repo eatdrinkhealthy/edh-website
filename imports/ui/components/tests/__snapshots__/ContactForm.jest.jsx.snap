@@ -15,7 +15,6 @@ exports[`<ContactForm /> matches render snapshot - with no form validation error
         Name
       </label>
       <input
-        autoFocus={true}
         component="input"
         id="contactName"
         name="contactName"
@@ -35,7 +34,6 @@ exports[`<ContactForm /> matches render snapshot - with no form validation error
         Email
       </label>
       <input
-        autoFocus={false}
         component="input"
         id="contactEmail"
         name="contactEmail"

@@ -18,17 +18,11 @@ const maxLength40 = value =>
 const maxLength500 = value =>
   value && value.length > 500 ? "Must not have more than 500 characters." : undefined;
 
-/* eslint-disable jsx-a11y/label-has-for, jsx-a11y/no-autofocus */
-const renderInput = ({ input, label, type, autoFocus, meta: { touched, error } }) => (
+/* eslint-disable jsx-a11y/label-has-for */
+const renderInput = ({ input, label, type, meta: { touched, error } }) => (
   <div>
     <label htmlFor={input.name}>{label}</label>
-    <input
-      {...input}
-      id={input.name}
-      component="input"
-      type={type}
-      autoFocus={autoFocus}
-    />
+    <input {...input} id={input.name} component="input" type={type} />
     {touched &&
     error && (
       <span id={`${input.name}Error`} className="form-error is-visible">
@@ -45,14 +39,11 @@ renderInput.propTypes = {
   }).isRequired, // eslint-disable-line react/forbid-prop-types
   label: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-  autoFocus: PropTypes.bool,
   meta: PropTypes.shape({
     touched: PropTypes.bool.isRequired,
     error: PropTypes.stringisRequired,
   }).isRequired,
 };
-
-renderInput.defaultProps = { autoFocus: false };
 
 const renderTextarea = ({ input, label, meta: { touched, error } }) => (
   <div>
@@ -77,7 +68,7 @@ renderTextarea.propTypes = {
     error: PropTypes.stringisRequired,
   }).isRequired,
 };
-/* eslint-enable jsx-a11y/label-has-for, jsx-a11y/no-autofocus */
+/* eslint-enable jsx-a11y/label-has-for */
 
 const ContactFormComponent = props => {
   const { handleSubmit } = props;
@@ -92,7 +83,6 @@ const ContactFormComponent = props => {
           component={renderInput}
           type="text"
           validate={[required, minLength2, maxLength40]}
-          autoFocus
         />
 
         <Field

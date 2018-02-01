@@ -183,7 +183,6 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
                   Name
                 </label>
                 <input
-                  autoFocus={true}
                   component="input"
                   id="contactName"
                   name="contactName"
@@ -203,7 +202,6 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
                   Email
                 </label>
                 <input
-                  autoFocus={false}
                   component="input"
                   id="contactEmail"
                   name="contactEmail"

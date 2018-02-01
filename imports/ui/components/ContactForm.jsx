@@ -122,6 +122,28 @@ ContactFormComponent.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
 };
 
-const ContactForm = reduxForm({ form: "contactForm" })(ContactFormComponent);
+const onSubmitSuccess = (result, dispatch, props) => {
+  // on successful submit, clear form fields
+  props.change("contactName", "");
+  props.untouch("contactName"); // clears validation error
+
+  props.change("contactEmail", "");
+  props.untouch("contactEmail"); // clears validation error
+
+  props.change("contactMessage", "");
+  props.untouch("contactMessage"); // clears validation error
+
+  // set focus on contactName field
+  // NOTE: using document.querySelector is not a React standard (works here, not in jest)
+  const contactNameElem = document.querySelector("input#contactName");
+  if (contactNameElem) {
+    contactNameElem.focus();
+  }
+};
+
+const ContactForm = reduxForm({
+  form: "contactForm",
+  onSubmitSuccess,
+})(ContactFormComponent);
 
 export default ContactForm;

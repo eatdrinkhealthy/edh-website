@@ -185,6 +185,7 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
                 <input
                   autoFocus={true}
                   component="input"
+                  id="contactName"
                   name="contactName"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -204,6 +205,7 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
                 <input
                   autoFocus={false}
                   component="input"
+                  id="contactEmail"
                   name="contactEmail"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -222,6 +224,7 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
                 </label>
                 <textarea
                   cols="10"
+                  id="contactMessage"
                   name="contactMessage"
                   onBlur={[Function]}
                   onChange={[Function]}

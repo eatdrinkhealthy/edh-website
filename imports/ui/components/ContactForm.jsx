@@ -22,8 +22,19 @@ const maxLength500 = value =>
 const renderInput = ({ input, label, type, autoFocus, meta: { touched, error } }) => (
   <div>
     <label htmlFor={input.name}>{label}</label>
-    <input {...input} component="input" type={type} autoFocus={autoFocus} />
-    {touched && error && <span className="form-error is-visible">{error}</span>}
+    <input
+      {...input}
+      id={input.name}
+      component="input"
+      type={type}
+      autoFocus={autoFocus}
+    />
+    {touched &&
+    error && (
+      <span id={`${input.name}Error`} className="form-error is-visible">
+        {error}
+      </span>
+    )}
   </div>
 );
 
@@ -46,8 +57,13 @@ renderInput.defaultProps = { autoFocus: false };
 const renderTextarea = ({ input, label, meta: { touched, error } }) => (
   <div>
     <label htmlFor={input.name}>{label}</label>
-    <textarea {...input} cols="10" rows="50" />
-    {touched && error && <span className="form-error is-visible">{error}</span>}
+    <textarea {...input} id={input.name} cols="10" rows="50" />
+    {touched &&
+    error && (
+      <span id={`${input.name}Error`} className="form-error is-visible">
+        {error}
+      </span>
+    )}
   </div>
 );
 

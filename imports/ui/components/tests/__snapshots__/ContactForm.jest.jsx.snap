@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContactForm /> matches render snapshot - with no form validation errors 1`] = `
+<div>
+  <h2>
+    Contact Us
+  </h2>
+  <form
+    onSubmit={[Function]}
+  >
+    <div>
+      <label
+        htmlFor="contactName"
+      >
+        Name
+      </label>
+      <input
+        autoFocus={true}
+        component="input"
+        id="contactName"
+        name="contactName"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onDragStart={[Function]}
+        onDrop={[Function]}
+        onFocus={[Function]}
+        type="text"
+        value=""
+      />
+    </div>
+    <div>
+      <label
+        htmlFor="contactEmail"
+      >
+        Email
+      </label>
+      <input
+        autoFocus={false}
+        component="input"
+        id="contactEmail"
+        name="contactEmail"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onDragStart={[Function]}
+        onDrop={[Function]}
+        onFocus={[Function]}
+        type="email"
+        value=""
+      />
+    </div>
+    <div>
+      <label
+        htmlFor="contactMessage"
+      >
+        Message
+      </label>
+      <textarea
+        cols="10"
+        id="contactMessage"
+        name="contactMessage"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onDragStart={[Function]}
+        onDrop={[Function]}
+        onFocus={[Function]}
+        rows="50"
+        value=""
+      />
+    </div>
+    <button
+      className="button button--submit"
+      id="contactSubmit"
+      type="submit"
+    >
+      Send
+    </button>
+  </form>
+</div>
+`;

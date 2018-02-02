@@ -7,7 +7,9 @@ Meteor.methods({
     check(email, String);
     check(message, String);
 
-    // unblock OR defer
+    if (Meteor.isServer) {
+      this.unblock();
+    }
 
     console.log("name:", name);
     console.log("email:", email);

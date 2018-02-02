@@ -43,6 +43,17 @@ exports[`<NavBar /> matches render snapshot 1`] = `
             <a
               aria-current={false}
               className={undefined}
+              href="#contactForm"
+              onClick={[Function]}
+              style={undefined}
+            >
+              CONTACT
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current={false}
+              className={undefined}
               href="/privacy-policy"
               onClick={[Function]}
               style={undefined}

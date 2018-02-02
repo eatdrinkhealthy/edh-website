@@ -76,7 +76,7 @@ const ContactFormComponent = props => {
   return (
     <div>
       <h2>Contact Us</h2>
-      <form onSubmit={handleSubmit}>
+      <form id="contactForm" onSubmit={handleSubmit}>
         <Field
           name="contactName"
           label="Name"

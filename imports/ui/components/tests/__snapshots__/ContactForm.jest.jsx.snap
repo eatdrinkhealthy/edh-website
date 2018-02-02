@@ -6,6 +6,7 @@ exports[`<ContactForm /> matches render snapshot - with no form validation error
     Contact Us
   </h2>
   <form
+    id="contactForm"
     onSubmit={[Function]}
   >
     <div>

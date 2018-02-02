@@ -1,5 +1,20 @@
-import React from "react";
+import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import PropTypes from "prop-types";
+
+class HashLink extends Component {
+  static propTypes = {
+    to: PropTypes.string.isRequired,
+  };
+
+  handleClick = () => {
+    document.querySelector(this.props.to).scrollIntoView();
+  };
+
+  render() {
+    return <NavLink {...this.props} onClick={this.handleClick} />;
+  }
+}
 
 const NavBar = () => (
   <div className="row">
@@ -15,6 +30,11 @@ const NavBar = () => (
               <NavLink to="/" activeStyle={{ color: "#f28020" }} exact>
                 HOME
               </NavLink>
+            </li>
+            <li>
+              <HashLink to="#contactForm" activeStyle={{ color: "#f28020" }} exact>
+                CONTACT
+              </HashLink>
             </li>
             <li>
               <NavLink to="/privacy-policy" activeStyle={{ color: "#f28020" }} exact>

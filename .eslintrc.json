@@ -17,7 +17,12 @@
     }
   },
   "settings": {
-    "import/core-modules": ["meteor/meteor", "meteor/accounts-base", "meteor/mongo"]
+    "import/core-modules": [
+      "meteor/meteor",
+      "meteor/accounts-base",
+      "meteor/mongo",
+      "meteor/check"
+    ]
   },
   "globals": {
     "window": true,

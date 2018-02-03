@@ -21,7 +21,8 @@
       "meteor/meteor",
       "meteor/accounts-base",
       "meteor/mongo",
-      "meteor/check"
+      "meteor/check",
+      "meteor/email"
     ]
   },
   "globals": {

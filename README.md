@@ -31,3 +31,9 @@ a simple splash page with links to the web and mobile app, for now.  (this site 
     - consider adding an additional test condition / expect when snapshot testing, to confirm you are getting the type of snapshot you are expecting, and not something like 'undefined'
         + eg, adding a hasClass check, is informative when doing TDD and snapshot is not yet finalized or captured
    
+### EMail
+* An email service account has been setup with mailgun (per the Meteor Guide, and The Meteor Chef) to enable using the Meteor mail API
+    - this allows easy sending of mail from a contact form on the EDH website
+    - NOTE: a MAIL_URL must be set (per the guide) in order for the meteor mail API to function correctly
+        + a script file has been created, `set_mail_url.sh`, and stored in the project's config repo
+        + also note, for convenience during development, check local aliases that run that script (e.g. 'smu')

@@ -35,5 +35,5 @@ a simple splash page with links to the web and mobile app, for now.  (this site 
 * An email service account has been setup with mailgun (per the Meteor Guide, and The Meteor Chef) to enable using the Meteor mail API
     - this allows easy sending of mail from a contact form on the EDH website
     - NOTE: a MAIL_URL must be set (per the guide) in order for the meteor mail API to function correctly
-        + a script file has been created, `set_mail_url.sh`, and stored in the project's config repo
+        + a script file has been created, `set_mail_url.sh`, and stored in the project's config repo (or backed up local storage)
         + also note, for convenience during development, check local aliases that run that script (e.g. 'smu')

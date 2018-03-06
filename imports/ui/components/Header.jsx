@@ -14,17 +14,6 @@ const Header = () => (
               </div>
               <div className="app-header__banner-buttons">
                 <a
-                  href="https://itunes.apple.com/app/id1116167404"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="button button--app-store"
-                >
-                  <i className="fa fa-apple" />
-                  <span>
-                    Download on<br />the <strong>App Store</strong>
-                  </span>
-                </a>
-                <a
                   href="https://app.eatdrinkhealthy.co/"
                   target="_blank"
                   rel="noopener noreferrer"

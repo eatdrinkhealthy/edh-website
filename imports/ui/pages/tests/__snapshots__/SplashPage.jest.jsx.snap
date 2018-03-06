@@ -126,24 +126,6 @@ exports[`<SplashPage /> matches render snapshot 1`] = `
                 className="app-header__banner-buttons"
               >
                 <a
-                  className="button button--app-store"
-                  href="https://itunes.apple.com/app/id1116167404"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <i
-                    className="fa fa-apple"
-                  />
-                  <span>
-                    Download on
-                    <br />
-                    the 
-                    <strong>
-                      App Store
-                    </strong>
-                  </span>
-                </a>
-                <a
                   className="button button--wep-app"
                   href="https://app.eatdrinkhealthy.co/"
                   rel="noopener noreferrer"
